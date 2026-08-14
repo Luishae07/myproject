@@ -1,0 +1,50 @@
+name: YouTube crawler
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    # Once a day. Adjust freely -- each run is cheap since it's sharded
+    # across many short-lived parallel jobs, not one long one.
+    - cron: '0 6 * * *'
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 10 shards: each job only touches queries[i] where i % 10 == shard.
+        # Bump this if queries.txt grows and runs start taking too long --
+        # each shard runs on its own runner (own IP), so this is also what
+        # actually avoids one IP getting rate-limited by YouTube.
+        shard: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+          override: true
+
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            crawler/target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('crawler/Cargo.lock') }}
+
+      - name: Build
+        working-directory: crawler
+        run: cargo build --release
+
+      - name: Crawl shard ${{ matrix.shard }}
+        working-directory: crawler
+        env:
+          INGEST_URL: ${{ secrets.INGEST_URL }}
+          INGEST_TOKEN: ${{ secrets.INGEST_TOKEN }}
+        run: |
+          ./target/release/youtube-crawler \
+            --queries-file queries.txt \
+            --shard-index ${{ matrix.shard }} \
+            --shard-total 10

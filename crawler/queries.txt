@@ -1,0 +1,107 @@
+python tutorial
+javascript tutorial
+rust programming
+react tutorial
+next.js tutorial
+web development
+machine learning
+data science
+docker tutorial
+kubernetes tutorial
+linux commands
+sql tutorial
+system design
+algorithms explained
+data structures
+web3 explained
+cybersecurity basics
+ethical hacking
+ctf walkthrough
+networking basics
+devops tutorial
+git tutorial
+github actions
+aws tutorial
+cloud computing
+software architecture
+clean code
+design patterns
+graphql tutorial
+rest api tutorial
+typescript tutorial
+go programming
+c++ tutorial
+java tutorial
+mobile app development
+flutter tutorial
+swift programming
+android development
+ios development
+game development
+unity tutorial
+unreal engine tutorial
+physics explained
+chemistry basics
+mathematics explained
+history documentary
+geography explained
+philosophy explained
+economics explained
+biology explained
+astronomy explained
+space exploration
+science documentary
+cooking tutorial
+baking recipes
+fitness workout
+yoga tutorial
+guitar lessons
+piano lessons
+music theory
+photography tutorial
+video editing tutorial
+graphic design tutorial
+digital art tutorial
+drawing tutorial
+3d modeling tutorial
+blender tutorial
+photoshop tutorial
+productivity tips
+study tips
+language learning
+spanish lessons
+japanese lessons
+french lessons
+travel vlog
+documentary
+tech news
+product review
+unboxing
+diy projects
+woodworking
+home improvement
+gardening tips
+car maintenance
+motorcycle review
+electric vehicles
+space news
+ai explained
+chatgpt tutorial
+prompt engineering
+startup advice
+entrepreneurship
+personal finance
+investing basics
+stock market explained
+cryptocurrency explained
+real estate investing
+book review
+podcast clips
+stand up comedy
+movie review
+tv show review
+gaming walkthrough
+speedrun
+esports highlights
+retro gaming
+board games review
