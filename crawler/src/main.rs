@@ -7,9 +7,11 @@
 // handles queries where (index_in_list % M == N) -- lets a GitHub Actions
 // matrix split one big query list across many parallel jobs/IPs.
 
+use reqwest::cookie::Jar;
 use serde_json::Value;
 use std::env;
 use std::fs;
+use std::sync::Arc;
 use std::time::Duration;
 
 #[derive(Default, Clone)]
@@ -119,11 +121,6 @@ fn search_youtube(client: &reqwest::blocking::Client, query: &str) -> Vec<VideoE
              (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
         )
         .header("Accept-Language", "en-US,en;q=0.9")
-        // Without this, YouTube redirects EU/unknown-region requests to a
-        // cookie-consent page that itself redirects back, looping until
-        // reqwest hits its max-redirects limit and errors out -- this is
-        // the standard bypass (same one yt-dlp uses).
-        .header("Cookie", "CONSENT=YES+cb.20210328-17-p0.en+FX+888")
         .send()
     {
         Ok(r) => r,
@@ -242,8 +239,22 @@ fn main() {
         all_queries.len()
     );
 
+    // Domain-scoped cookie jar, not a request header -- a header only
+    // applies to the exact request it's attached to, but YouTube's consent
+    // bypass has to survive a redirect to a *different* host
+    // (consent.youtube.com / consent.google.com), which reqwest correctly
+    // refuses to carry custom headers across for security. A real cookie
+    // jar tracks cookies per-domain like a browser does, so it's still
+    // sent (or not, depending on domain) at each hop.
+    let jar = Jar::default();
+    for url in ["https://www.youtube.com", "https://youtube.com", "https://google.com"] {
+        jar.add_cookie_str("CONSENT=YES+cb.20210328-17-p0.en+FX+888", &url.parse().unwrap());
+        jar.add_cookie_str("SOCS=CAI", &url.parse().unwrap());
+    }
+
     let client = reqwest::blocking::Client::builder()
         .timeout(Duration::from_secs(20))
+        .cookie_provider(Arc::new(jar))
         .build()
         .expect("failed to build HTTP client");
 
