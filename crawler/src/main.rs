@@ -119,6 +119,11 @@ fn search_youtube(client: &reqwest::blocking::Client, query: &str) -> Vec<VideoE
              (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
         )
         .header("Accept-Language", "en-US,en;q=0.9")
+        // Without this, YouTube redirects EU/unknown-region requests to a
+        // cookie-consent page that itself redirects back, looping until
+        // reqwest hits its max-redirects limit and errors out -- this is
+        // the standard bypass (same one yt-dlp uses).
+        .header("Cookie", "CONSENT=YES+cb.20210328-17-p0.en+FX+888")
         .send()
     {
         Ok(r) => r,
