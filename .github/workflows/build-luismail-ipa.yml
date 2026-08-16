@@ -20,7 +20,15 @@ jobs:
         run: ls /Applications | grep Xcode
 
       - name: Select latest Xcode
-        run: sudo xcode-select -switch /Applications/Xcode.app
+        # /Applications/Xcode.app is a symlink to whatever GitHub set as the
+        # runner's *default* Xcode, which is not necessarily the newest one
+        # actually installed -- explicitly pick the highest-versioned
+        # Xcode_*.app so the real iOS 26 SDK (with the Liquid Glass APIs)
+        # is what actually gets used.
+        run: |
+          LATEST=$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)
+          echo "Using $LATEST"
+          sudo xcode-select -switch "$LATEST"
 
       - name: xcodebuild version
         run: xcodebuild -version

@@ -31,7 +31,7 @@ struct SettingsView: View {
                     Text("Every message is encrypted per-recipient over TLS 1.3 via LSAD.")
                 }
 
-                Section("Gmail") {
+                Section {
                     Button {
                         Task {
                             guard let address = session.address, let password = session.password else { return }
@@ -55,6 +55,8 @@ struct SettingsView: View {
                     if let gmailError {
                         Text(gmailError).font(.footnote).foregroundStyle(.red)
                     }
+                } header: {
+                    Text("Gmail")
                 } footer: {
                     Text("Read-only by default; new mail is delivered into this inbox tagged [Gmail]. Reply via Gmail sends a real threaded reply through your actual account.")
                 }
