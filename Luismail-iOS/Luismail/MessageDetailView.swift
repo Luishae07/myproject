@@ -153,30 +153,6 @@ struct RichBodyView: View {
     }
 }
 
-/// Muted, looping, autoplay video -- for Nexus's GIF->MP4 embeds. AVPlayer
-/// rather than a real GIF decoder since the source is already an MP4.
-struct LoopingVideoView: UIViewControllerRepresentable {
-    let url: URL
-
-    func makeUIViewController(context: Context) -> AVPlayerViewController {
-        let player = AVQueuePlayer()
-        let controller = AVPlayerViewController()
-        controller.player = player
-        controller.showsPlaybackControls = false
-        let item = AVPlayerItem(url: url)
-        let looper = AVPlayerLooper(player: player, templateItem: item)
-        context.coordinator.looper = looper
-        player.isMuted = true
-        player.play()
-        return controller
-    }
-
-    func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {}
-
-    func makeCoordinator() -> Coordinator { Coordinator() }
-    class Coordinator { var looper: AVPlayerLooper? }
-}
-
 /// Locked-down HTML renderer for untrusted sender content -- JavaScript
 /// disabled, no navigation delegate allowed, no network-triggered loads
 /// beyond the initial `loadHTMLString`.

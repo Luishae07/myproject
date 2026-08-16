@@ -7,48 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ABEF3F96FC8F478B92CFC47C /* LuismailApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99B9351C0F4413F94610C5B /* LuismailApp.swift */; };
-		A23B72EFB7314758BD72D1E0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB53C770C9F4C3A950C0275 /* Models.swift */; };
-		66A7BCDA3BD24BD7B9F9E841 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B20087077C5471A83FF9F3B /* APIClient.swift */; };
-		C2EDAAE8CBB44B8AA9F575DE /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81A8DED41AA448D8D08E39A /* SessionStore.swift */; };
-		B0822CD8EF81445F8C92ADA8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D6C710D07A49FFA0187D5B /* RootView.swift */; };
-		F8521868A5314FE69A0A5D74 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95810CFBB164D91B03330CD /* LoginView.swift */; };
-		15EEC48173604A9DB8E9F84B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62351588CCC49619A449259 /* MainTabView.swift */; };
-		F16345D0F36E40FF82C9DA05 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDAEDDFC7AB4FC189D8D7BC /* InboxView.swift */; };
-		A93CFB266D0D444DB3655C8F /* MessageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6373ECA845747FDA3383773 /* MessageDetailView.swift */; };
-		2673676DECF44BC9844166D8 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF398955B91A4F55BDDBC6D2 /* ComposeView.swift */; };
-		030D8AF203594ABEAD553897 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77EEB78317A944988399D920 /* SettingsView.swift */; };
-		6FF845103E724D6E88A36993 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1575273DD63D41398E7DEFAD /* InfoView.swift */; };
-		C552D34969A042A8819D58BA /* SpamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C81A82411584E9494C1417B /* SpamView.swift */; };
-		17079A248144443BA228DC2B /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703F8F7CDB3F4503B7F58FD7 /* NotificationManager.swift */; };
-		5F254B70AC054646B1A7F18C /* LuismailIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39D5AA71DA646B7A914F61D /* LuismailIntents.swift */; };
-		CD4F137B666D496B9EAD7DA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7AAA7BA6174EA98DB09AE2 /* Assets.xcassets */; };
-		5439C0766B4B410F8C77B15E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719C256B980C42E280570D3E /* Preview Assets.xcassets */; };
+		3F25CEBE74F14F75B25688AD /* LuismailApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E531AD1C0DD4A0995F772E5 /* LuismailApp.swift */; };
+		A83AE6EB8DB1485C8152D009 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B44902632346F793BF7DC9 /* Models.swift */; };
+		CC94C5CD5E1041A2A8E01FF8 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76BC3E628A304A0E98CA2718 /* APIClient.swift */; };
+		609997B403A64F929D69F5CD /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3858F55EFC64ED7BBBC3E77 /* SessionStore.swift */; };
+		D2EA9227583C4C8C8F8B1D18 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6667D9BAE345EEB5086125 /* RootView.swift */; };
+		C29FEF0DEBEC4E9EA5040F22 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC89B50D52114AE4B7A391F6 /* LoginView.swift */; };
+		87D3929DE7D94F42A7281EE4 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C641288AD414C6E8F92A3E9 /* MainTabView.swift */; };
+		460848D87ADA47A2AAAA9F16 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC44CC98CABE41F8B908B62F /* InboxView.swift */; };
+		C9F79675E0854574B8554EFD /* MessageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB513C34FC24A61A20A80E7 /* MessageDetailView.swift */; };
+		A64F9D1B6627421FB05DC9F6 /* ComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9235DD9739914165873B1748 /* ComposeView.swift */; };
+		530BFA23CC8A436EB8E2058C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB08C0724FD7442789594BB1 /* SettingsView.swift */; };
+		33DAD4DE47914DA982F51214 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F5820629B5496EB96542AF /* InfoView.swift */; };
+		B802852E72EC4BB39A970BF2 /* SpamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E9A5B00B544C3AF4792EA /* SpamView.swift */; };
+		382231176A1142508E2C5254 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D8726EC2734153AF84C8FB /* NotificationManager.swift */; };
+		579378B383E34F98A9EF78EB /* LuismailIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E053CB002E42EEA8C4C49D /* LuismailIntents.swift */; };
+		EA0234CD23134A7BA0F21969 /* LoopingVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8842C4A6C94874B8BD93DA /* LoopingVideoView.swift */; };
+		8C84A49FE0D04A988BEBA666 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2385E615978F4761887D6450 /* Assets.xcassets */; };
+		87530788B3AF47B5AA0FBA6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 898666EB1DC3412D89C8D818 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C99B9351C0F4413F94610C5B /* LuismailApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuismailApp.swift; sourceTree = "<group>"; };
-		5FB53C770C9F4C3A950C0275 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		6B20087077C5471A83FF9F3B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		E81A8DED41AA448D8D08E39A /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
-		B4D6C710D07A49FFA0187D5B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		A95810CFBB164D91B03330CD /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		F62351588CCC49619A449259 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		EBDAEDDFC7AB4FC189D8D7BC /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
-		A6373ECA845747FDA3383773 /* MessageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailView.swift; sourceTree = "<group>"; };
-		BF398955B91A4F55BDDBC6D2 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
-		77EEB78317A944988399D920 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		1575273DD63D41398E7DEFAD /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
-		4C81A82411584E9494C1417B /* SpamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpamView.swift; sourceTree = "<group>"; };
-		703F8F7CDB3F4503B7F58FD7 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
-		D39D5AA71DA646B7A914F61D /* LuismailIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuismailIntents.swift; sourceTree = "<group>"; };
-		DC7AAA7BA6174EA98DB09AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		719C256B980C42E280570D3E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A3F5865D94A243638E04BD41 /* Luismail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luismail.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E531AD1C0DD4A0995F772E5 /* LuismailApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuismailApp.swift; sourceTree = "<group>"; };
+		38B44902632346F793BF7DC9 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		76BC3E628A304A0E98CA2718 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		F3858F55EFC64ED7BBBC3E77 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		9D6667D9BAE345EEB5086125 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		CC89B50D52114AE4B7A391F6 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8C641288AD414C6E8F92A3E9 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		FC44CC98CABE41F8B908B62F /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		8BB513C34FC24A61A20A80E7 /* MessageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDetailView.swift; sourceTree = "<group>"; };
+		9235DD9739914165873B1748 /* ComposeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeView.swift; sourceTree = "<group>"; };
+		AB08C0724FD7442789594BB1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F1F5820629B5496EB96542AF /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		D25E9A5B00B544C3AF4792EA /* SpamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpamView.swift; sourceTree = "<group>"; };
+		F2D8726EC2734153AF84C8FB /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		09E053CB002E42EEA8C4C49D /* LuismailIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuismailIntents.swift; sourceTree = "<group>"; };
+		4B8842C4A6C94874B8BD93DA /* LoopingVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopingVideoView.swift; sourceTree = "<group>"; };
+		2385E615978F4761887D6450 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		898666EB1DC3412D89C8D818 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3FBBD5DAF3BF4B43886AA529 /* Luismail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luismail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8D1D08FFD72344E6851B6B86 /* Frameworks */ = {
+		5789C2D3D4CB439EBE2B9AC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,40 +60,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		478465AF13314477BD30467D = {
+		3B7243CDBCFC4558868BF26D = {
 			isa = PBXGroup;
 			children = (
-				FD890B240B3A4FD69989E39D /* Luismail */,
-				E55DF53B34F349F7BD8EC47A /* Products */,
+				97808D2772A54058B40864B5 /* Luismail */,
+				78A670D6FD8B4434BFE168D1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E55DF53B34F349F7BD8EC47A /* Products */ = {
+		78A670D6FD8B4434BFE168D1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3F5865D94A243638E04BD41 /* Luismail.app */,
+				3FBBD5DAF3BF4B43886AA529 /* Luismail.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FD890B240B3A4FD69989E39D /* Luismail */ = {
+		97808D2772A54058B40864B5 /* Luismail */ = {
 			isa = PBXGroup;
-			children = (C99B9351C0F4413F94610C5B /* LuismailApp.swift */, 5FB53C770C9F4C3A950C0275 /* Models.swift */, 6B20087077C5471A83FF9F3B /* APIClient.swift */, E81A8DED41AA448D8D08E39A /* SessionStore.swift */, B4D6C710D07A49FFA0187D5B /* RootView.swift */, A95810CFBB164D91B03330CD /* LoginView.swift */, F62351588CCC49619A449259 /* MainTabView.swift */, EBDAEDDFC7AB4FC189D8D7BC /* InboxView.swift */, A6373ECA845747FDA3383773 /* MessageDetailView.swift */, BF398955B91A4F55BDDBC6D2 /* ComposeView.swift */, 77EEB78317A944988399D920 /* SettingsView.swift */, 1575273DD63D41398E7DEFAD /* InfoView.swift */, 4C81A82411584E9494C1417B /* SpamView.swift */, 703F8F7CDB3F4503B7F58FD7 /* NotificationManager.swift */, D39D5AA71DA646B7A914F61D /* LuismailIntents.swift */, B1D8644B83FD4DFD9E379F17 /* Assets.xcassets */, 75C62BFF05894FFC9445BE78 /* Preview Content */);
+			children = (4E531AD1C0DD4A0995F772E5 /* LuismailApp.swift */, 38B44902632346F793BF7DC9 /* Models.swift */, 76BC3E628A304A0E98CA2718 /* APIClient.swift */, F3858F55EFC64ED7BBBC3E77 /* SessionStore.swift */, 9D6667D9BAE345EEB5086125 /* RootView.swift */, CC89B50D52114AE4B7A391F6 /* LoginView.swift */, 8C641288AD414C6E8F92A3E9 /* MainTabView.swift */, FC44CC98CABE41F8B908B62F /* InboxView.swift */, 8BB513C34FC24A61A20A80E7 /* MessageDetailView.swift */, 9235DD9739914165873B1748 /* ComposeView.swift */, AB08C0724FD7442789594BB1 /* SettingsView.swift */, F1F5820629B5496EB96542AF /* InfoView.swift */, D25E9A5B00B544C3AF4792EA /* SpamView.swift */, F2D8726EC2734153AF84C8FB /* NotificationManager.swift */, 09E053CB002E42EEA8C4C49D /* LuismailIntents.swift */, 4B8842C4A6C94874B8BD93DA /* LoopingVideoView.swift */, D71EF2B93DDB46C3892C8D64 /* Assets.xcassets */, 9B315E8C4C304F7DB91BD44F /* Preview Content */);
 			path = Luismail;
 			sourceTree = "<group>";
 		};
-		B1D8644B83FD4DFD9E379F17 /* Assets.xcassets */ = {
+		D71EF2B93DDB46C3892C8D64 /* Assets.xcassets */ = {
 			isa = PBXGroup;
 			children = (
-				DC7AAA7BA6174EA98DB09AE2 /* Assets.xcassets */,
+				2385E615978F4761887D6450 /* Assets.xcassets */,
 			);
 			name = Assets.xcassets;
 			sourceTree = "<group>";
 		};
-		75C62BFF05894FFC9445BE78 /* Preview Content */ = {
+		9B315E8C4C304F7DB91BD44F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				719C256B980C42E280570D3E /* Preview Assets.xcassets */,
+				898666EB1DC3412D89C8D818 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -99,13 +101,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1EE308054F96468C84914E9F /* Luismail */ = {
+		785E81213AA944538415DDC9 /* Luismail */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8D8933F05119423D92A7ED08 /* Build configuration list for PBXNativeTarget "Luismail" */;
+			buildConfigurationList = 580593C25B544098A4F8338D /* Build configuration list for PBXNativeTarget "Luismail" */;
 			buildPhases = (
-				6346388583414ADC81E1B400 /* Sources */,
-				8D1D08FFD72344E6851B6B86 /* Frameworks */,
-				19D3C159CDD349D3AD9FF7D2 /* Resources */,
+				62A97934AB1D42F092791419 /* Sources */,
+				5789C2D3D4CB439EBE2B9AC5 /* Frameworks */,
+				66D18721008E49F8A8C090B4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -113,25 +115,25 @@
 			);
 			name = Luismail;
 			productName = Luismail;
-			productReference = A3F5865D94A243638E04BD41 /* Luismail.app */;
+			productReference = 3FBBD5DAF3BF4B43886AA529 /* Luismail.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3992B13600B040B2980AC9B8 /* Project object */ = {
+		AF8C10D6D9EB4F919BDB673B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					1EE308054F96468C84914E9F = {
+					785E81213AA944538415DDC9 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 63B1C46D22714FEA8D7C3352 /* Build configuration list for PBXProject "Luismail" */;
+			buildConfigurationList = 9CCA4CADC94B4AA39BD27B07 /* Build configuration list for PBXProject "Luismail" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -139,55 +141,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 478465AF13314477BD30467D;
-			productRefGroup = E55DF53B34F349F7BD8EC47A /* Products */;
+			mainGroup = 3B7243CDBCFC4558868BF26D;
+			productRefGroup = 78A670D6FD8B4434BFE168D1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1EE308054F96468C84914E9F /* Luismail */,
+				785E81213AA944538415DDC9 /* Luismail */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		19D3C159CDD349D3AD9FF7D2 /* Resources */ = {
+		66D18721008E49F8A8C090B4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5439C0766B4B410F8C77B15E /* Preview Assets.xcassets in Resources */,
-				CD4F137B666D496B9EAD7DA5 /* Assets.xcassets in Resources */,
+				87530788B3AF47B5AA0FBA6A /* Preview Assets.xcassets in Resources */,
+				8C84A49FE0D04A988BEBA666 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6346388583414ADC81E1B400 /* Sources */ = {
+		62A97934AB1D42F092791419 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABEF3F96FC8F478B92CFC47C /* LuismailApp.swift in Sources */,
-				A23B72EFB7314758BD72D1E0 /* Models.swift in Sources */,
-				66A7BCDA3BD24BD7B9F9E841 /* APIClient.swift in Sources */,
-				C2EDAAE8CBB44B8AA9F575DE /* SessionStore.swift in Sources */,
-				B0822CD8EF81445F8C92ADA8 /* RootView.swift in Sources */,
-				F8521868A5314FE69A0A5D74 /* LoginView.swift in Sources */,
-				15EEC48173604A9DB8E9F84B /* MainTabView.swift in Sources */,
-				F16345D0F36E40FF82C9DA05 /* InboxView.swift in Sources */,
-				A93CFB266D0D444DB3655C8F /* MessageDetailView.swift in Sources */,
-				2673676DECF44BC9844166D8 /* ComposeView.swift in Sources */,
-				030D8AF203594ABEAD553897 /* SettingsView.swift in Sources */,
-				6FF845103E724D6E88A36993 /* InfoView.swift in Sources */,
-				C552D34969A042A8819D58BA /* SpamView.swift in Sources */,
-				17079A248144443BA228DC2B /* NotificationManager.swift in Sources */,
-				5F254B70AC054646B1A7F18C /* LuismailIntents.swift in Sources */,
+				3F25CEBE74F14F75B25688AD /* LuismailApp.swift in Sources */,
+				A83AE6EB8DB1485C8152D009 /* Models.swift in Sources */,
+				CC94C5CD5E1041A2A8E01FF8 /* APIClient.swift in Sources */,
+				609997B403A64F929D69F5CD /* SessionStore.swift in Sources */,
+				D2EA9227583C4C8C8F8B1D18 /* RootView.swift in Sources */,
+				C29FEF0DEBEC4E9EA5040F22 /* LoginView.swift in Sources */,
+				87D3929DE7D94F42A7281EE4 /* MainTabView.swift in Sources */,
+				460848D87ADA47A2AAAA9F16 /* InboxView.swift in Sources */,
+				C9F79675E0854574B8554EFD /* MessageDetailView.swift in Sources */,
+				A64F9D1B6627421FB05DC9F6 /* ComposeView.swift in Sources */,
+				530BFA23CC8A436EB8E2058C /* SettingsView.swift in Sources */,
+				33DAD4DE47914DA982F51214 /* InfoView.swift in Sources */,
+				B802852E72EC4BB39A970BF2 /* SpamView.swift in Sources */,
+				382231176A1142508E2C5254 /* NotificationManager.swift in Sources */,
+				579378B383E34F98A9EF78EB /* LuismailIntents.swift in Sources */,
+				EA0234CD23134A7BA0F21969 /* LoopingVideoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		719C5E9D08CB4611B02AC6C9 /* Debug */ = {
+		EF44161F1489435196289C80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -248,7 +251,7 @@
 			};
 			name = Debug;
 		};
-		83BE9328AC6B4FE98F535026 /* Release */ = {
+		DD26697DEFE94D60B68A5F87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -302,7 +305,7 @@
 			};
 			name = Release;
 		};
-		A01548BA11E44F32AAD0FB44 /* Debug */ = {
+		0B8A7765DAC54CD096E7B326 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -333,7 +336,7 @@
 			};
 			name = Debug;
 		};
-		B281019517E347D7B024A637 /* Release */ = {
+		FF26CE33C6B144D980EEA3B1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -367,25 +370,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		63B1C46D22714FEA8D7C3352 /* Build configuration list for PBXProject "Luismail" */ = {
+		9CCA4CADC94B4AA39BD27B07 /* Build configuration list for PBXProject "Luismail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				719C5E9D08CB4611B02AC6C9 /* Debug */,
-				83BE9328AC6B4FE98F535026 /* Release */,
+				EF44161F1489435196289C80 /* Debug */,
+				DD26697DEFE94D60B68A5F87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8D8933F05119423D92A7ED08 /* Build configuration list for PBXNativeTarget "Luismail" */ = {
+		580593C25B544098A4F8338D /* Build configuration list for PBXNativeTarget "Luismail" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A01548BA11E44F32AAD0FB44 /* Debug */,
-				B281019517E347D7B024A637 /* Release */,
+				0B8A7765DAC54CD096E7B326 /* Debug */,
+				FF26CE33C6B144D980EEA3B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3992B13600B040B2980AC9B8 /* Project object */;
+	rootObject = AF8C10D6D9EB4F919BDB673B /* Project object */;
 }
