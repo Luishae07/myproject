@@ -8,9 +8,10 @@ struct InboxView: View {
     @State private var isSummarizing = false
 
     var filtered: [LuismailMessage] {
-        guard !searchText.isEmpty else { return session.messages }
+        let nonSpam = session.messages.filter { !$0.spam }
+        guard !searchText.isEmpty else { return nonSpam }
         let q = searchText.lowercased()
-        return session.messages.filter {
+        return nonSpam.filter {
             $0.from.lowercased().contains(q) || $0.subject.lowercased().contains(q) || $0.body.lowercased().contains(q)
         }
     }

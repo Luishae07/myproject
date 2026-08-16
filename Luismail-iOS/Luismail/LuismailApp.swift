@@ -8,6 +8,10 @@ struct LuismailApp: App {
         WindowGroup {
             RootView()
                 .environmentObject(session)
+                .onAppear {
+                    NotificationManager.requestAuthorization()
+                    session.resumeIfLoggedIn()
+                }
         }
     }
 }

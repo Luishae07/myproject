@@ -19,7 +19,7 @@ struct InfoView: View {
                     Text("**Encryption Gmail doesn't have.** Google can read your Gmail — that's how spam filtering, search, and ad-relevance scanning work. Here, message bodies are encrypted per-recipient before they leave your device; the server only ever stores ciphertext.")
                     Text("**No STARTTLS downgrade.** SMTP's encryption is opportunistic and can silently fall back to plaintext between servers. LSAD is TLS 1.3-only — there's no unencrypted mode to fall back to.")
                     Text("**Not a walled garden.** The Gmail bridge means you don't have to choose — keep your Gmail address working exactly as it does today, with new mail also landing here, encrypted, and repliable from either side.")
-                    Text("**Honest tradeoffs:** this is a small, self-hosted service, not a hyperscale mail provider — no built-in spam ML, no massive deliverability reputation. It's a privacy-first companion to your existing mail, not a drop-in replacement for everyone's needs yet.")
+                    Text("**Built for depth, not scale — yet.** Luismail runs lean by design today, with lightweight spam detection rather than a hyperscale reputation network. As the user base grows, so does the infrastructure behind it. Right now, think of it as the privacy layer alongside your existing mail.")
                 }
 
                 InfoCard(title: "Account recovery") {

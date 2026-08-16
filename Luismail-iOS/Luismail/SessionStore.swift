@@ -9,9 +9,14 @@ final class SessionStore: ObservableObject {
     @Published var errorMessage: String?
 
     var isLoggedIn: Bool { address != nil && password != nil }
+    var unreadCount: Int { messages.filter { !$0.read && !$0.spam }.count }
+    var spamCount: Int { messages.filter { $0.spam }.count }
 
     private let addressKey = "luismail_address"
     private let passwordKey = "luismail_password"
+
+    private var webSocketTask: URLSessionWebSocketTask?
+    private var wsReconnectTask: Task<Void, Never>?
 
     init() {
         // Simple UserDefaults persistence for now -- a production build
@@ -29,6 +34,7 @@ final class SessionStore: ObservableObject {
             try await APIClient.login(address: fullAddress, password: password)
             persist(address: fullAddress, password: password)
             await refreshInbox()
+            connectRealtime()
         } catch {
             errorMessage = error.localizedDescription
         }
@@ -43,12 +49,24 @@ final class SessionStore: ObservableObject {
             try await APIClient.register(address: fullAddress, password: password)
             persist(address: fullAddress, password: password)
             await refreshInbox()
+            connectRealtime()
         } catch {
             errorMessage = error.localizedDescription
         }
     }
 
+    /// Called once at app launch if a session was already persisted, so a
+    /// relaunch reconnects the WebSocket without requiring a fresh login.
+    func resumeIfLoggedIn() {
+        guard isLoggedIn else { return }
+        Task {
+            await refreshInbox()
+            connectRealtime()
+        }
+    }
+
     func logout() {
+        disconnectRealtime()
         address = nil
         password = nil
         messages = []
@@ -80,6 +98,19 @@ final class SessionStore: ObservableObject {
         }
     }
 
+    func unspam(id: Int) async {
+        guard let address, let password else { return }
+        do {
+            try await APIClient.unspam(address: address, password: password, id: id)
+            if let idx = messages.firstIndex(where: { $0.id == id }) {
+                let m = messages[idx]
+                messages[idx] = LuismailMessage(id: m.id, from: m.from, subject: m.subject, body: m.body, ts: m.ts, read: m.read, spam: false)
+            }
+        } catch {
+            errorMessage = error.localizedDescription
+        }
+    }
+
     func deleteAccount() async {
         guard let address, let password else { return }
         do {
@@ -95,5 +126,61 @@ final class SessionStore: ObservableObject {
         self.password = password
         UserDefaults.standard.set(address, forKey: addressKey)
         UserDefaults.standard.set(password, forKey: passwordKey)
+    }
+
+    // MARK: - Real-time (WebSocket, mirrors the web frontend's ws_bridge client)
+
+    func connectRealtime() {
+        disconnectRealtime()
+        guard let address, let password, let url = URL(string: wsBaseURL) else { return }
+
+        let task = URLSession.shared.webSocketTask(with: url)
+        webSocketTask = task
+        task.resume()
+
+        let authMsg = (try? JSONSerialization.data(withJSONObject: ["address": address, "password": password]))
+            .flatMap { String(data: $0, encoding: .utf8) } ?? "{}"
+        task.send(.string(authMsg)) { _ in }
+
+        listenForRealtimeMessages()
+    }
+
+    private func listenForRealtimeMessages() {
+        webSocketTask?.receive { [weak self] result in
+            guard let self else { return }
+            switch result {
+            case .failure:
+                Task { @MainActor in self.scheduleReconnect() }
+            case .success(let message):
+                if case .string(let text) = message, let data = text.data(using: .utf8),
+                   let payload = try? JSONDecoder().decode(WSInboxPayload.self, from: data),
+                   payload.type == "inbox", let newMessages = payload.messages {
+                    Task { @MainActor in
+                        let previousIds = Set(self.messages.map { $0.id })
+                        let genuinelyNew = newMessages.filter { !previousIds.contains($0.id) && !$0.spam }
+                        self.messages = newMessages.sorted { $0.ts > $1.ts }
+                        for m in genuinelyNew { NotificationManager.notifyNewMail(m) }
+                        NotificationManager.updateBadge(self.unreadCount)
+                    }
+                }
+                Task { @MainActor in self.listenForRealtimeMessages() }
+            }
+        }
+    }
+
+    private func scheduleReconnect() {
+        guard isLoggedIn else { return }
+        wsReconnectTask?.cancel()
+        wsReconnectTask = Task {
+            try? await Task.sleep(nanoseconds: 3_000_000_000)
+            guard !Task.isCancelled else { return }
+            connectRealtime()
+        }
+    }
+
+    private func disconnectRealtime() {
+        wsReconnectTask?.cancel()
+        webSocketTask?.cancel(with: .goingAway, reason: nil)
+        webSocketTask = nil
     }
 }

@@ -87,4 +87,22 @@ enum APIClient {
         }
         return url
     }
+
+    static func unspam(address: String, password: String, id: Int) async throws {
+        let resp: SimpleOKResponse = try await post("/api/unspam", body: ["address": address, "password": password, "id": id])
+        if !resp.ok { throw APIError.server(resp.error ?? "unspam failed") }
+    }
+
+    /// Nexus's crawled-GIF search -- same endpoint the web frontend's GIF
+    /// picker uses. No auth needed, it's a public read-only search.
+    static func searchGifs(query: String) async throws -> [NexusGif] {
+        var comps = URLComponents(string: nexusBaseURL + "/api/nexus/gifs")!
+        comps.queryItems = [URLQueryItem(name: "q", value: query)]
+        guard let url = comps.url else { throw APIError.server("bad URL") }
+        let (data, _) = try await URLSession.shared.data(from: url)
+        guard let decoded = try? JSONDecoder().decode(NexusGifResponse.self, from: data) else {
+            throw APIError.decode
+        }
+        return decoded.gifs
+    }
 }

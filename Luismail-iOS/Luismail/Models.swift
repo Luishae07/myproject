@@ -4,9 +4,12 @@ import Foundation
 // docs in the main Luismail repo (lsad_server_go / webbridge.py).
 let luismailDomain = "luismail.pages.dev"
 
-// Same webbridge tunnel URL the web frontend uses -- rotates if the
-// cloudflared process restarts, same caveat as the other clients.
+// Same webbridge/WS-bridge/Nexus tunnel URLs the web frontend uses -- all
+// rotate if their cloudflared process restarts, same caveat as everywhere
+// else in this project.
 let webbridgeBaseURL = "https://doctors-adequate-chem-area.trycloudflare.com"
+let wsBaseURL = "wss://respected-character-football-instead.trycloudflare.com"
+let nexusBaseURL = "https://stevens-predictions-get-feet.trycloudflare.com"
 
 struct LuismailMessage: Identifiable, Decodable {
     let id: Int
@@ -15,6 +18,7 @@ struct LuismailMessage: Identifiable, Decodable {
     let body: String
     let ts: Double
     let read: Bool
+    let spam: Bool
 
     var date: Date { Date(timeIntervalSince1970: ts) }
 
@@ -63,5 +67,24 @@ struct SummaryResponse: Decodable {
 struct GmailConnectResponse: Decodable {
     let ok: Bool
     let url: String?
+    let error: String?
+}
+
+// ---- Nexus GIF picker (same crawled-GIF backend the web frontend uses) ----
+struct NexusGif: Decodable, Identifiable {
+    let alt: String
+    let vid: String
+    var id: String { vid }
+    var fullURL: URL? { URL(string: nexusBaseURL + vid) }
+}
+
+struct NexusGifResponse: Decodable {
+    let gifs: [NexusGif]
+}
+
+// ---- WebSocket push payloads from the WS bridge ----
+struct WSInboxPayload: Decodable {
+    let type: String
+    let messages: [LuismailMessage]?
     let error: String?
 }
