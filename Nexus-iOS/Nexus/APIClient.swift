@@ -11,6 +11,8 @@ enum APIError: Error, LocalizedError {
     }
 }
 
+private struct ErrorBody: Decodable { let error: String? }
+
 enum APIClient {
     private static func request<T: Decodable>(
         _ path: String, method: String = "GET", token: String? = nil, json body: [String: Any]? = nil
@@ -25,7 +27,6 @@ enum APIClient {
         let (data, response) = try await URLSession.shared.data(for: req)
         guard let http = response as? HTTPURLResponse else { throw APIError.badResponse }
         if http.statusCode >= 400 {
-            struct ErrorBody: Decodable { let error: String? }
             if let obj = try? JSONDecoder().decode(ErrorBody.self, from: data) {
                 throw APIError.server(obj.error ?? "Request failed (\(http.statusCode))")
             }
