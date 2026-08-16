@@ -58,8 +58,32 @@ enum APIClient {
         return r.messages
     }
 
-    static func sendMessage(token: String, channelID: String, content: String) async throws -> NexusMessage {
-        try await request("/api/nexus/messages", method: "POST", token: token, json: ["channel_id": channelID, "content": content])
+    static func sendMessage(token: String, channelID: String, content: String, attachments: [Attachment] = []) async throws -> NexusMessage {
+        var body: [String: Any] = ["channel_id": channelID, "content": content]
+        if !attachments.isEmpty {
+            body["attachments"] = attachments.map { ["type": $0.type, "url": $0.url] }
+        }
+        return try await request("/api/nexus/messages", method: "POST", token: token, json: body)
+    }
+
+    static func react(token: String, messageID: String, emoji: String) async throws -> [Reaction] {
+        let r: ReactResponse = try await request("/api/nexus/react", method: "POST", token: token, json: ["message_id": messageID, "emoji": emoji])
+        return r.reactions
+    }
+
+    static func createPoll(token: String, channelID: String, question: String, options: [String]) async throws -> NexusMessage {
+        try await request("/api/nexus/poll/create", method: "POST", token: token, json: ["channel_id": channelID, "question": question, "options": options])
+    }
+
+    static func votePoll(token: String, pollID: String, optionIndex: Int) async throws -> Poll {
+        try await request("/api/nexus/poll/vote", method: "POST", token: token, json: ["poll_id": pollID, "option_index": optionIndex])
+    }
+
+    static func searchGifs(query: String) async throws -> [NexusGif] {
+        var comps = URLComponents(string: API.base + "/api/nexus/gifs")!
+        comps.queryItems = query.isEmpty ? nil : [URLQueryItem(name: "q", value: query)]
+        let (data, _) = try await URLSession.shared.data(from: comps.url!)
+        return try JSONDecoder().decode(GifsResponse.self, from: data).gifs
     }
 
     static func members(token: String, serverID: String) async throws -> [NexusMember] {

@@ -37,6 +37,25 @@ struct Attachment: Decodable, Hashable {
     let url: String
 }
 
+struct Reaction: Decodable, Hashable {
+    let emoji: String
+    let count: Int
+    let users: [String]
+}
+
+struct PollOption: Decodable, Hashable {
+    let text: String
+    let votes: Int
+}
+
+struct Poll: Decodable, Hashable {
+    let id: String
+    let question: String
+    let options: [PollOption]
+    let my_vote: Int?
+    let total_votes: Int
+}
+
 struct NexusMessage: Identifiable, Decodable, Hashable {
     let id: String
     let author: String
@@ -44,6 +63,8 @@ struct NexusMessage: Identifiable, Decodable, Hashable {
     let attachments: String?
     let created_at: String?
     let edited: Int?
+    var reactions: [Reaction]?
+    var poll: Poll?
 
     var attachmentList: [Attachment] {
         guard let attachments, let data = attachments.data(using: .utf8) else { return [] }
@@ -51,6 +72,19 @@ struct NexusMessage: Identifiable, Decodable, Hashable {
     }
 }
 struct MessagesResponse: Decodable { let messages: [NexusMessage] }
+
+struct ReactResponse: Decodable { let reactions: [Reaction] }
+
+struct NexusGif: Decodable, Identifiable {
+    var id: String { vid }
+    let alt: String?
+    let vid: String
+
+    var resolvedURL: URL? {
+        vid.hasPrefix("http") ? URL(string: vid) : URL(string: API.base + vid)
+    }
+}
+struct GifsResponse: Decodable { let gifs: [NexusGif] }
 
 struct NexusMember: Identifiable, Decodable, Hashable {
     var id: String { username }
@@ -86,4 +120,8 @@ struct WSEvent: Decodable {
     let channel_id: String?
     let message: NexusMessage?
     let online: [String]?
+    let message_id: String?
+    let reactions: [Reaction]?
+    let poll_id: String?
+    let poll: Poll?
 }

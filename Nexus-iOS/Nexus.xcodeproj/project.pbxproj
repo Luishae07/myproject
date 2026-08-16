@@ -7,46 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B2DF2DDF9882477AA83EC13A /* NexusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CFEE1E63124F61927C05F8 /* NexusApp.swift */; };
-		38BE3FBDD5064F3D809C10EE /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033F3569DB954F54AB25A248 /* Models.swift */; };
-		133B92F869DA45E3ACF73167 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06443A9E26A4E4D8724BC99 /* APIClient.swift */; };
-		C052F2A1BCAC46CC87648A83 /* NexusSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DB997A9DF94EE1B502F645 /* NexusSocket.swift */; };
-		47C201E997244BB490F0FFCA /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD94A95DAB645CBAAEAA7BA /* SessionStore.swift */; };
-		725D5FB7C673403796684F93 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED57FCA7E44CDAB7EA9E68 /* RootView.swift */; };
-		0B098D09AEC04D639D324B93 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC97E0A7D8A4C74B568A5BB /* LoginView.swift */; };
-		82C8F636E9414EA88B963A13 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A689DE512904F01A0C1F938 /* MainTabView.swift */; };
-		A4F0342CB7D5496B9D81C667 /* ServerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24ACA68DA4164F9D82BFB2E4 /* ServerListView.swift */; };
-		1E73E01050F647EC9CBB5773 /* ChannelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886F5153280145EB8D317CA8 /* ChannelListView.swift */; };
-		2681A7901A1844B79A8BA1C7 /* ChannelMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771611C90F0F4B2E86C4C0E2 /* ChannelMessagesView.swift */; };
-		41432EB620D24DF3828830CB /* MembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE012A0A772490D8D12B2A5 /* MembersView.swift */; };
-		640779B8E276403580A2B809 /* DMListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD46D1C2F0746CE9A9CDF40 /* DMListView.swift */; };
-		ADC3161B26324DF6B38C95AC /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1B00170D6443FDA433147B /* AccountView.swift */; };
-		6BFDF982AA2643CCB847C73C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3995C3BF2C46138F6C8F4B /* Assets.xcassets */; };
-		98E61C25C03A4F288831418F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51590CBC93FF483CB00F0383 /* Preview Assets.xcassets */; };
+		F5F6430992FF4C36B547C19C /* NexusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD181492027847B1B80BC03A /* NexusApp.swift */; };
+		9AFE43A3B43F4F25A0E640A0 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F9EC11B8E044B986DD8297 /* Models.swift */; };
+		F8D4AF3FD1074F868675BF0A /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEA29C663F74E05A5016150 /* APIClient.swift */; };
+		91F0C773A44F4CB6AC4D7F21 /* NexusSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6956F64AE77847EE8C9366D9 /* NexusSocket.swift */; };
+		F3918331D33C4C2E8A813993 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253C9D65D86647B7B4A4EB1D /* SessionStore.swift */; };
+		87E2DD693D20411FA70CD41D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADA6346DB5B4E72AD8F6882 /* RootView.swift */; };
+		808CF5CF466C4A69BE35A473 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71894208694447608D36A060 /* LoginView.swift */; };
+		7A59D5DA020A4D92885711F4 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54976E09AEE40FE91241CA9 /* MainTabView.swift */; };
+		80887FE918014C3997267F3C /* ServerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAB6B693D0C4FBCB32E4DEA /* ServerListView.swift */; };
+		94A9995E5D894FEFB5611201 /* ChannelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFBCBC6BDDC47658D9096D0 /* ChannelListView.swift */; };
+		114F5CDEB4BA482181FFBDFF /* ChannelMessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18C1480DD7744DBB980C19F /* ChannelMessagesView.swift */; };
+		67B096E919674FD389518C8B /* MembersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E663B3101E426296036109 /* MembersView.swift */; };
+		6AADAD29E9064F07BB812FF0 /* DMListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C6BCE9202047F4827FBE78 /* DMListView.swift */; };
+		C3641660F2FF4C7A84E9AEF6 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0177414CAEA4B23B1D7357A /* AccountView.swift */; };
+		9F8C11A2F49640A3A3828CEE /* GifPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59355A05F41E4C27A23790A9 /* GifPickerView.swift */; };
+		349141E7311345FB883D2512 /* PollComposerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74AD1CA0B474112AE986947 /* PollComposerView.swift */; };
+		60CE2AF716BD48069A288711 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E61DD629AE534379BB2733C2 /* Assets.xcassets */; };
+		F5F75DA0C597450B89537893 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01282FCE85804C669C101DD7 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		43CFEE1E63124F61927C05F8 /* NexusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexusApp.swift; sourceTree = "<group>"; };
-		033F3569DB954F54AB25A248 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		C06443A9E26A4E4D8724BC99 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		C9DB997A9DF94EE1B502F645 /* NexusSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexusSocket.swift; sourceTree = "<group>"; };
-		0FD94A95DAB645CBAAEAA7BA /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
-		65ED57FCA7E44CDAB7EA9E68 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		5EC97E0A7D8A4C74B568A5BB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		3A689DE512904F01A0C1F938 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		24ACA68DA4164F9D82BFB2E4 /* ServerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListView.swift; sourceTree = "<group>"; };
-		886F5153280145EB8D317CA8 /* ChannelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListView.swift; sourceTree = "<group>"; };
-		771611C90F0F4B2E86C4C0E2 /* ChannelMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMessagesView.swift; sourceTree = "<group>"; };
-		CFE012A0A772490D8D12B2A5 /* MembersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersView.swift; sourceTree = "<group>"; };
-		ECD46D1C2F0746CE9A9CDF40 /* DMListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMListView.swift; sourceTree = "<group>"; };
-		BA1B00170D6443FDA433147B /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
-		CB3995C3BF2C46138F6C8F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		51590CBC93FF483CB00F0383 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DC028BD45AD845B4B80592AA /* Nexus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nexus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD181492027847B1B80BC03A /* NexusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexusApp.swift; sourceTree = "<group>"; };
+		41F9EC11B8E044B986DD8297 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		5CEA29C663F74E05A5016150 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		6956F64AE77847EE8C9366D9 /* NexusSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexusSocket.swift; sourceTree = "<group>"; };
+		253C9D65D86647B7B4A4EB1D /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		EADA6346DB5B4E72AD8F6882 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		71894208694447608D36A060 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F54976E09AEE40FE91241CA9 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		5DAB6B693D0C4FBCB32E4DEA /* ServerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListView.swift; sourceTree = "<group>"; };
+		4CFBCBC6BDDC47658D9096D0 /* ChannelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListView.swift; sourceTree = "<group>"; };
+		C18C1480DD7744DBB980C19F /* ChannelMessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMessagesView.swift; sourceTree = "<group>"; };
+		48E663B3101E426296036109 /* MembersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MembersView.swift; sourceTree = "<group>"; };
+		21C6BCE9202047F4827FBE78 /* DMListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMListView.swift; sourceTree = "<group>"; };
+		C0177414CAEA4B23B1D7357A /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		59355A05F41E4C27A23790A9 /* GifPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifPickerView.swift; sourceTree = "<group>"; };
+		F74AD1CA0B474112AE986947 /* PollComposerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollComposerView.swift; sourceTree = "<group>"; };
+		E61DD629AE534379BB2733C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01282FCE85804C669C101DD7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65775C68130B4CDF9FBCB8CA /* Nexus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nexus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		42F58EEFFED3441E8E1F11BB /* Frameworks */ = {
+		182B689CC1F8476095049885 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -56,40 +60,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		300714CAFEAF4740B6A4D66C = {
+		A8B126E15DD14FAAB13B478F = {
 			isa = PBXGroup;
 			children = (
-				5FD62A6F64064F70AFE07A54 /* Nexus */,
-				5C9A9585BE3043129039315E /* Products */,
+				AD739269DA0745FF991B14E5 /* Nexus */,
+				57D153B713574BEBA23BFF1F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5C9A9585BE3043129039315E /* Products */ = {
+		57D153B713574BEBA23BFF1F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DC028BD45AD845B4B80592AA /* Nexus.app */,
+				65775C68130B4CDF9FBCB8CA /* Nexus.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5FD62A6F64064F70AFE07A54 /* Nexus */ = {
+		AD739269DA0745FF991B14E5 /* Nexus */ = {
 			isa = PBXGroup;
-			children = (43CFEE1E63124F61927C05F8 /* NexusApp.swift */, 033F3569DB954F54AB25A248 /* Models.swift */, C06443A9E26A4E4D8724BC99 /* APIClient.swift */, C9DB997A9DF94EE1B502F645 /* NexusSocket.swift */, 0FD94A95DAB645CBAAEAA7BA /* SessionStore.swift */, 65ED57FCA7E44CDAB7EA9E68 /* RootView.swift */, 5EC97E0A7D8A4C74B568A5BB /* LoginView.swift */, 3A689DE512904F01A0C1F938 /* MainTabView.swift */, 24ACA68DA4164F9D82BFB2E4 /* ServerListView.swift */, 886F5153280145EB8D317CA8 /* ChannelListView.swift */, 771611C90F0F4B2E86C4C0E2 /* ChannelMessagesView.swift */, CFE012A0A772490D8D12B2A5 /* MembersView.swift */, ECD46D1C2F0746CE9A9CDF40 /* DMListView.swift */, BA1B00170D6443FDA433147B /* AccountView.swift */, E1340BFB259D44AC89A30BB0 /* Assets.xcassets */, 1F8499EEBA954A3DAF6A7B51 /* Preview Content */);
+			children = (DD181492027847B1B80BC03A /* NexusApp.swift */, 41F9EC11B8E044B986DD8297 /* Models.swift */, 5CEA29C663F74E05A5016150 /* APIClient.swift */, 6956F64AE77847EE8C9366D9 /* NexusSocket.swift */, 253C9D65D86647B7B4A4EB1D /* SessionStore.swift */, EADA6346DB5B4E72AD8F6882 /* RootView.swift */, 71894208694447608D36A060 /* LoginView.swift */, F54976E09AEE40FE91241CA9 /* MainTabView.swift */, 5DAB6B693D0C4FBCB32E4DEA /* ServerListView.swift */, 4CFBCBC6BDDC47658D9096D0 /* ChannelListView.swift */, C18C1480DD7744DBB980C19F /* ChannelMessagesView.swift */, 48E663B3101E426296036109 /* MembersView.swift */, 21C6BCE9202047F4827FBE78 /* DMListView.swift */, C0177414CAEA4B23B1D7357A /* AccountView.swift */, 59355A05F41E4C27A23790A9 /* GifPickerView.swift */, F74AD1CA0B474112AE986947 /* PollComposerView.swift */, EAB0654DA5FF4FC286C54048 /* Assets.xcassets */, 3DE9C99174E64806BB0E8F04 /* Preview Content */);
 			path = Nexus;
 			sourceTree = "<group>";
 		};
-		E1340BFB259D44AC89A30BB0 /* Assets.xcassets */ = {
+		EAB0654DA5FF4FC286C54048 /* Assets.xcassets */ = {
 			isa = PBXGroup;
 			children = (
-				CB3995C3BF2C46138F6C8F4B /* Assets.xcassets */,
+				E61DD629AE534379BB2733C2 /* Assets.xcassets */,
 			);
 			name = Assets.xcassets;
 			sourceTree = "<group>";
 		};
-		1F8499EEBA954A3DAF6A7B51 /* Preview Content */ = {
+		3DE9C99174E64806BB0E8F04 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				51590CBC93FF483CB00F0383 /* Preview Assets.xcassets */,
+				01282FCE85804C669C101DD7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -97,13 +101,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5D306506247140DC877999DD /* Nexus */ = {
+		A9FA37D4F0824B14ADFCE3FD /* Nexus */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C29BBA87E9B6495BA98BA2D5 /* Build configuration list for PBXNativeTarget "Nexus" */;
+			buildConfigurationList = 7F23EFAAD36F4D4FA59B355C /* Build configuration list for PBXNativeTarget "Nexus" */;
 			buildPhases = (
-				DBD94B50BDC5490EB820C105 /* Sources */,
-				42F58EEFFED3441E8E1F11BB /* Frameworks */,
-				E6E1DB076B1643F19859D55E /* Resources */,
+				E7F6C607CBB748A4BA914679 /* Sources */,
+				182B689CC1F8476095049885 /* Frameworks */,
+				E8836884A40D40838AEE4DD7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -111,25 +115,25 @@
 			);
 			name = Nexus;
 			productName = Nexus;
-			productReference = DC028BD45AD845B4B80592AA /* Nexus.app */;
+			productReference = 65775C68130B4CDF9FBCB8CA /* Nexus.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2CE4C03947A34FC7837E45F9 /* Project object */ = {
+		8E659E57DDC54ACEB61D4972 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					5D306506247140DC877999DD = {
+					A9FA37D4F0824B14ADFCE3FD = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 927306CE02EA45E1AE1AA111 /* Build configuration list for PBXProject "Nexus" */;
+			buildConfigurationList = A1AD2EAAA9484CBE870C5C32 /* Build configuration list for PBXProject "Nexus" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -137,54 +141,56 @@
 				en,
 				Base,
 			);
-			mainGroup = 300714CAFEAF4740B6A4D66C;
-			productRefGroup = 5C9A9585BE3043129039315E /* Products */;
+			mainGroup = A8B126E15DD14FAAB13B478F;
+			productRefGroup = 57D153B713574BEBA23BFF1F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D306506247140DC877999DD /* Nexus */,
+				A9FA37D4F0824B14ADFCE3FD /* Nexus */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E6E1DB076B1643F19859D55E /* Resources */ = {
+		E8836884A40D40838AEE4DD7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98E61C25C03A4F288831418F /* Preview Assets.xcassets in Resources */,
-				6BFDF982AA2643CCB847C73C /* Assets.xcassets in Resources */,
+				F5F75DA0C597450B89537893 /* Preview Assets.xcassets in Resources */,
+				60CE2AF716BD48069A288711 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DBD94B50BDC5490EB820C105 /* Sources */ = {
+		E7F6C607CBB748A4BA914679 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2DF2DDF9882477AA83EC13A /* NexusApp.swift in Sources */,
-				38BE3FBDD5064F3D809C10EE /* Models.swift in Sources */,
-				133B92F869DA45E3ACF73167 /* APIClient.swift in Sources */,
-				C052F2A1BCAC46CC87648A83 /* NexusSocket.swift in Sources */,
-				47C201E997244BB490F0FFCA /* SessionStore.swift in Sources */,
-				725D5FB7C673403796684F93 /* RootView.swift in Sources */,
-				0B098D09AEC04D639D324B93 /* LoginView.swift in Sources */,
-				82C8F636E9414EA88B963A13 /* MainTabView.swift in Sources */,
-				A4F0342CB7D5496B9D81C667 /* ServerListView.swift in Sources */,
-				1E73E01050F647EC9CBB5773 /* ChannelListView.swift in Sources */,
-				2681A7901A1844B79A8BA1C7 /* ChannelMessagesView.swift in Sources */,
-				41432EB620D24DF3828830CB /* MembersView.swift in Sources */,
-				640779B8E276403580A2B809 /* DMListView.swift in Sources */,
-				ADC3161B26324DF6B38C95AC /* AccountView.swift in Sources */,
+				F5F6430992FF4C36B547C19C /* NexusApp.swift in Sources */,
+				9AFE43A3B43F4F25A0E640A0 /* Models.swift in Sources */,
+				F8D4AF3FD1074F868675BF0A /* APIClient.swift in Sources */,
+				91F0C773A44F4CB6AC4D7F21 /* NexusSocket.swift in Sources */,
+				F3918331D33C4C2E8A813993 /* SessionStore.swift in Sources */,
+				87E2DD693D20411FA70CD41D /* RootView.swift in Sources */,
+				808CF5CF466C4A69BE35A473 /* LoginView.swift in Sources */,
+				7A59D5DA020A4D92885711F4 /* MainTabView.swift in Sources */,
+				80887FE918014C3997267F3C /* ServerListView.swift in Sources */,
+				94A9995E5D894FEFB5611201 /* ChannelListView.swift in Sources */,
+				114F5CDEB4BA482181FFBDFF /* ChannelMessagesView.swift in Sources */,
+				67B096E919674FD389518C8B /* MembersView.swift in Sources */,
+				6AADAD29E9064F07BB812FF0 /* DMListView.swift in Sources */,
+				C3641660F2FF4C7A84E9AEF6 /* AccountView.swift in Sources */,
+				9F8C11A2F49640A3A3828CEE /* GifPickerView.swift in Sources */,
+				349141E7311345FB883D2512 /* PollComposerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7BC47481F9BB4B0DA01095F9 /* Debug */ = {
+		369DA87B9DCC4573B6986892 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -245,7 +251,7 @@
 			};
 			name = Debug;
 		};
-		7625A3CE7B744F31885D8A31 /* Release */ = {
+		4AF6453C0B5C448E98F1D8FB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -299,7 +305,7 @@
 			};
 			name = Release;
 		};
-		8DC12073D77F41EB96C3477A /* Debug */ = {
+		D27D82E8AEE64067B7D0D853 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -330,7 +336,7 @@
 			};
 			name = Debug;
 		};
-		0B2B86A196AE425FB73079EF /* Release */ = {
+		A40346B39A874CC8A252B0F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -364,25 +370,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		927306CE02EA45E1AE1AA111 /* Build configuration list for PBXProject "Nexus" */ = {
+		A1AD2EAAA9484CBE870C5C32 /* Build configuration list for PBXProject "Nexus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7BC47481F9BB4B0DA01095F9 /* Debug */,
-				7625A3CE7B744F31885D8A31 /* Release */,
+				369DA87B9DCC4573B6986892 /* Debug */,
+				4AF6453C0B5C448E98F1D8FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C29BBA87E9B6495BA98BA2D5 /* Build configuration list for PBXNativeTarget "Nexus" */ = {
+		7F23EFAAD36F4D4FA59B355C /* Build configuration list for PBXNativeTarget "Nexus" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8DC12073D77F41EB96C3477A /* Debug */,
-				0B2B86A196AE425FB73079EF /* Release */,
+				D27D82E8AEE64067B7D0D853 /* Debug */,
+				A40346B39A874CC8A252B0F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2CE4C03947A34FC7837E45F9 /* Project object */;
+	rootObject = 8E659E57DDC54ACEB61D4972 /* Project object */;
 }
