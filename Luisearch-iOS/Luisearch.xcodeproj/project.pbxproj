@@ -7,38 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB63D98B6F40420AB2A19923 /* LuisearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B493B535CCAA42AA9206DE2E /* LuisearchApp.swift */; };
-		319D75C09BC249CABE96543D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5940823AE96D430A8010CC65 /* Models.swift */; };
-		4C24BB3FF2C1443888039F11 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8214631768428D8166A6EB /* APIClient.swift */; };
-		ABADD6E49AA3412D858F75A3 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A4F306A8A442EEB368DA18 /* SearchView.swift */; };
-		DCA17AEC57824223884943BC /* WebResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4712903AFD3A4D809E4E686C /* WebResultsView.swift */; };
-		D41C3EB5D6504B67AF02E133 /* ImageResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58474B7E8534A37A6A1BE4F /* ImageResultsView.swift */; };
-		6E904AE0716B47D3BFE90D38 /* VideoResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A262E6129D4E4A3EA7F14B24 /* VideoResultsView.swift */; };
-		900A698956D944EFAA4AB377 /* AudioResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D347D56EBF114D36BCDC29DF /* AudioResultsView.swift */; };
-		AE27843D9539420AB9C9CD20 /* DownloadResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18966140420343B683E8E1B5 /* DownloadResultsView.swift */; };
-		3374A29B072542D6B86DCC29 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D89C619795549B0893AEB56 /* SettingsView.swift */; };
-		48EF994C69054D18A2868C70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD870BC9AA4D4EF99416EAA2 /* Assets.xcassets */; };
-		69A46C20C74D47E19074DA03 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C76BA6F74A5421B990DAB57 /* Preview Assets.xcassets */; };
+		0EEF574FD553438D99BF9914 /* LuisearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9223186D5A934725BDD9F3A0 /* LuisearchApp.swift */; };
+		AF6CE875BA694BA798B21F4B /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C57E9D4ECD14BD1A6C09B79 /* Models.swift */; };
+		94F1FE78C5094ADDA8E277BB /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2407500275BF439DABF5A6B4 /* APIClient.swift */; };
+		AB7A2D61282D442BBF0BC2EE /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC088514D6FE408BBD3434F3 /* SearchView.swift */; };
+		1109811C207C4E2FAB8BF728 /* WebResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A2332008054B4BB6942FF9 /* WebResultsView.swift */; };
+		96105F7284644C909C856DD4 /* ImageResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC97634C292F45B682ED16D3 /* ImageResultsView.swift */; };
+		99E875970424486694952538 /* VideoResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D7BBF7195F46C392A08136 /* VideoResultsView.swift */; };
+		A4A1D0096EFA4DC3AD032719 /* AudioResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEBD9C05F404F33BF13DE32 /* AudioResultsView.swift */; };
+		01B51C47C55C412E9C190C7E /* DownloadResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCF2A316E724D35A12FDF9D /* DownloadResultsView.swift */; };
+		2D2597C0DC2C467287F8E284 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED083C70C0EE48AD8A514E84 /* SettingsView.swift */; };
+		B32406F105CE41E7AC5BAA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB79B4303C3474C89FAAD65 /* Assets.xcassets */; };
+		DC0B28BD782C4B65B5B049F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5F0C4437B4465EA579483D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B493B535CCAA42AA9206DE2E /* LuisearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuisearchApp.swift; sourceTree = "<group>"; };
-		5940823AE96D430A8010CC65 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		7E8214631768428D8166A6EB /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		A9A4F306A8A442EEB368DA18 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
-		4712903AFD3A4D809E4E686C /* WebResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebResultsView.swift; sourceTree = "<group>"; };
-		C58474B7E8534A37A6A1BE4F /* ImageResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResultsView.swift; sourceTree = "<group>"; };
-		A262E6129D4E4A3EA7F14B24 /* VideoResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoResultsView.swift; sourceTree = "<group>"; };
-		D347D56EBF114D36BCDC29DF /* AudioResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioResultsView.swift; sourceTree = "<group>"; };
-		18966140420343B683E8E1B5 /* DownloadResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadResultsView.swift; sourceTree = "<group>"; };
-		9D89C619795549B0893AEB56 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		BD870BC9AA4D4EF99416EAA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8C76BA6F74A5421B990DAB57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D2C4C529F1594A0B98B4AB05 /* Luisearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luisearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9223186D5A934725BDD9F3A0 /* LuisearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuisearchApp.swift; sourceTree = "<group>"; };
+		7C57E9D4ECD14BD1A6C09B79 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		2407500275BF439DABF5A6B4 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		FC088514D6FE408BBD3434F3 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		E5A2332008054B4BB6942FF9 /* WebResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebResultsView.swift; sourceTree = "<group>"; };
+		EC97634C292F45B682ED16D3 /* ImageResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResultsView.swift; sourceTree = "<group>"; };
+		52D7BBF7195F46C392A08136 /* VideoResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoResultsView.swift; sourceTree = "<group>"; };
+		6AEBD9C05F404F33BF13DE32 /* AudioResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioResultsView.swift; sourceTree = "<group>"; };
+		FDCF2A316E724D35A12FDF9D /* DownloadResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadResultsView.swift; sourceTree = "<group>"; };
+		ED083C70C0EE48AD8A514E84 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DCB79B4303C3474C89FAAD65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E5F0C4437B4465EA579483D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C67AD41A0DE49468E0D54BF /* Luisearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luisearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6CC0475FDE3648BDB0226938 /* Frameworks */ = {
+		D246B8FEB7EB47E78B6DAD8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,40 +48,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6FBC820B012946C99B543D63 = {
+		B617DEFE1A0C40A2A0F77EA4 = {
 			isa = PBXGroup;
 			children = (
-				1804051A143A48E19AF0D5AC /* Luisearch */,
-				06D0C20981E3402DA75BACF9 /* Products */,
+				D22906AB51A04961B986B3F2 /* Luisearch */,
+				453838AE03994E90BF00AC38 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		06D0C20981E3402DA75BACF9 /* Products */ = {
+		453838AE03994E90BF00AC38 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2C4C529F1594A0B98B4AB05 /* Luisearch.app */,
+				7C67AD41A0DE49468E0D54BF /* Luisearch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1804051A143A48E19AF0D5AC /* Luisearch */ = {
+		D22906AB51A04961B986B3F2 /* Luisearch */ = {
 			isa = PBXGroup;
-			children = (B493B535CCAA42AA9206DE2E /* LuisearchApp.swift */, 5940823AE96D430A8010CC65 /* Models.swift */, 7E8214631768428D8166A6EB /* APIClient.swift */, A9A4F306A8A442EEB368DA18 /* SearchView.swift */, 4712903AFD3A4D809E4E686C /* WebResultsView.swift */, C58474B7E8534A37A6A1BE4F /* ImageResultsView.swift */, A262E6129D4E4A3EA7F14B24 /* VideoResultsView.swift */, D347D56EBF114D36BCDC29DF /* AudioResultsView.swift */, 18966140420343B683E8E1B5 /* DownloadResultsView.swift */, 9D89C619795549B0893AEB56 /* SettingsView.swift */, 607DF365B216403283B0E7A4 /* Assets.xcassets */, 78E53612A1B84AE09C57E374 /* Preview Content */);
+			children = (9223186D5A934725BDD9F3A0 /* LuisearchApp.swift */, 7C57E9D4ECD14BD1A6C09B79 /* Models.swift */, 2407500275BF439DABF5A6B4 /* APIClient.swift */, FC088514D6FE408BBD3434F3 /* SearchView.swift */, E5A2332008054B4BB6942FF9 /* WebResultsView.swift */, EC97634C292F45B682ED16D3 /* ImageResultsView.swift */, 52D7BBF7195F46C392A08136 /* VideoResultsView.swift */, 6AEBD9C05F404F33BF13DE32 /* AudioResultsView.swift */, FDCF2A316E724D35A12FDF9D /* DownloadResultsView.swift */, ED083C70C0EE48AD8A514E84 /* SettingsView.swift */, 9EC094DCA2734F079F6935FA /* Assets.xcassets */, E09A2FFC2F5840218561F681 /* Preview Content */);
 			path = Luisearch;
 			sourceTree = "<group>";
 		};
-		607DF365B216403283B0E7A4 /* Assets.xcassets */ = {
+		9EC094DCA2734F079F6935FA /* Assets.xcassets */ = {
 			isa = PBXGroup;
 			children = (
-				BD870BC9AA4D4EF99416EAA2 /* Assets.xcassets */,
+				DCB79B4303C3474C89FAAD65 /* Assets.xcassets */,
 			);
 			name = Assets.xcassets;
 			sourceTree = "<group>";
 		};
-		78E53612A1B84AE09C57E374 /* Preview Content */ = {
+		E09A2FFC2F5840218561F681 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				8C76BA6F74A5421B990DAB57 /* Preview Assets.xcassets */,
+				0E5F0C4437B4465EA579483D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -89,13 +89,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A11F399D189440EAFE33695 /* Luisearch */ = {
+		5701D11C580E4864B4518388 /* Luisearch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D39FBB81B38E42E7B4BB4056 /* Build configuration list for PBXNativeTarget "Luisearch" */;
+			buildConfigurationList = FBC641B204DF45BC8BEDE20D /* Build configuration list for PBXNativeTarget "Luisearch" */;
 			buildPhases = (
-				404943AB34FD4795A55AFCFC /* Sources */,
-				6CC0475FDE3648BDB0226938 /* Frameworks */,
-				3650934E24F54D9B8DD8CC50 /* Resources */,
+				89FEEB9591B24921BCF39652 /* Sources */,
+				D246B8FEB7EB47E78B6DAD8F /* Frameworks */,
+				9A6A5AFA7A364720AC52EA44 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -103,25 +103,25 @@
 			);
 			name = Luisearch;
 			productName = Luisearch;
-			productReference = D2C4C529F1594A0B98B4AB05 /* Luisearch.app */;
+			productReference = 7C67AD41A0DE49468E0D54BF /* Luisearch.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A6321B247B9B494E8B5BF8DE /* Project object */ = {
+		9173C2A66B4D4087856C831B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					3A11F399D189440EAFE33695 = {
+					5701D11C580E4864B4518388 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = BF7EB7F1082F4911A12FE614 /* Build configuration list for PBXProject "Luisearch" */;
+			buildConfigurationList = ED82BD72758844B392FCB2A2 /* Build configuration list for PBXProject "Luisearch" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,50 +129,50 @@
 				en,
 				Base,
 			);
-			mainGroup = 6FBC820B012946C99B543D63;
-			productRefGroup = 06D0C20981E3402DA75BACF9 /* Products */;
+			mainGroup = B617DEFE1A0C40A2A0F77EA4;
+			productRefGroup = 453838AE03994E90BF00AC38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A11F399D189440EAFE33695 /* Luisearch */,
+				5701D11C580E4864B4518388 /* Luisearch */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3650934E24F54D9B8DD8CC50 /* Resources */ = {
+		9A6A5AFA7A364720AC52EA44 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69A46C20C74D47E19074DA03 /* Preview Assets.xcassets in Resources */,
-				48EF994C69054D18A2868C70 /* Assets.xcassets in Resources */,
+				DC0B28BD782C4B65B5B049F1 /* Preview Assets.xcassets in Resources */,
+				B32406F105CE41E7AC5BAA83 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		404943AB34FD4795A55AFCFC /* Sources */ = {
+		89FEEB9591B24921BCF39652 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB63D98B6F40420AB2A19923 /* LuisearchApp.swift in Sources */,
-				319D75C09BC249CABE96543D /* Models.swift in Sources */,
-				4C24BB3FF2C1443888039F11 /* APIClient.swift in Sources */,
-				ABADD6E49AA3412D858F75A3 /* SearchView.swift in Sources */,
-				DCA17AEC57824223884943BC /* WebResultsView.swift in Sources */,
-				D41C3EB5D6504B67AF02E133 /* ImageResultsView.swift in Sources */,
-				6E904AE0716B47D3BFE90D38 /* VideoResultsView.swift in Sources */,
-				900A698956D944EFAA4AB377 /* AudioResultsView.swift in Sources */,
-				AE27843D9539420AB9C9CD20 /* DownloadResultsView.swift in Sources */,
-				3374A29B072542D6B86DCC29 /* SettingsView.swift in Sources */,
+				0EEF574FD553438D99BF9914 /* LuisearchApp.swift in Sources */,
+				AF6CE875BA694BA798B21F4B /* Models.swift in Sources */,
+				94F1FE78C5094ADDA8E277BB /* APIClient.swift in Sources */,
+				AB7A2D61282D442BBF0BC2EE /* SearchView.swift in Sources */,
+				1109811C207C4E2FAB8BF728 /* WebResultsView.swift in Sources */,
+				96105F7284644C909C856DD4 /* ImageResultsView.swift in Sources */,
+				99E875970424486694952538 /* VideoResultsView.swift in Sources */,
+				A4A1D0096EFA4DC3AD032719 /* AudioResultsView.swift in Sources */,
+				01B51C47C55C412E9C190C7E /* DownloadResultsView.swift in Sources */,
+				2D2597C0DC2C467287F8E284 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A7C6A6FC177242DE81DFFF66 /* Debug */ = {
+		3297715792DD4A90BD977804 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -233,7 +233,7 @@
 			};
 			name = Debug;
 		};
-		78F53BDA00F045FE99BF9797 /* Release */ = {
+		D3993888F108458DA51F09F8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -287,7 +287,7 @@
 			};
 			name = Release;
 		};
-		4B5737E44D3A49FA981EA0E4 /* Debug */ = {
+		62A3697AF11B4108BC89CB7D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -310,7 +310,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.luishae.luismail";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luishae.luisearch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
@@ -318,7 +318,7 @@
 			};
 			name = Debug;
 		};
-		6A1EB64A73BA4A06920E5633 /* Release */ = {
+		A1DC92659DDC4BB38594817C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -341,7 +341,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.luishae.luismail";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luishae.luisearch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
@@ -352,25 +352,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BF7EB7F1082F4911A12FE614 /* Build configuration list for PBXProject "Luisearch" */ = {
+		ED82BD72758844B392FCB2A2 /* Build configuration list for PBXProject "Luisearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7C6A6FC177242DE81DFFF66 /* Debug */,
-				78F53BDA00F045FE99BF9797 /* Release */,
+				3297715792DD4A90BD977804 /* Debug */,
+				D3993888F108458DA51F09F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D39FBB81B38E42E7B4BB4056 /* Build configuration list for PBXNativeTarget "Luisearch" */ = {
+		FBC641B204DF45BC8BEDE20D /* Build configuration list for PBXNativeTarget "Luisearch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B5737E44D3A49FA981EA0E4 /* Debug */,
-				6A1EB64A73BA4A06920E5633 /* Release */,
+				62A3697AF11B4108BC89CB7D /* Debug */,
+				A1DC92659DDC4BB38594817C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A6321B247B9B494E8B5BF8DE /* Project object */;
+	rootObject = 9173C2A66B4D4087856C831B /* Project object */;
 }

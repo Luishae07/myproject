@@ -7,54 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9824BFD5A7C8464793D30083 /* LuisystemdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38585A9B0A64B2A89E5B4C9 /* LuisystemdApp.swift */; };
-		8F29FCF4C92A40988A07B903 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C260D70594D82BFB57AB7 /* Models.swift */; };
-		B712DCAE636A45AD9A133192 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F003102B304C63A83709A7 /* APIClient.swift */; };
-		D3F51E0A07814C3EB5384FA9 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991567F58CC749BFB10AA09A /* SessionStore.swift */; };
-		4D9CA4AAD81549A48AFC5A5F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD34ED4CD9884A73847FF6C9 /* RootView.swift */; };
-		7AD7345F685C4B26865921E1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8AA8753C1480DA0D54119 /* LoginView.swift */; };
-		8B3FBDA081214E379848BADE /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB9CB1DADF4D04ADDB6865 /* MainTabView.swift */; };
-		1FCC3C9CE2984E1CB94A8608 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93164AE2AF64BDD86920B18 /* ProjectsView.swift */; };
-		EC208057EB114EB0B4271B7D /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED80E23EB3B944018B525F55 /* ProjectDetailView.swift */; };
-		95F90B1B44844654BB475AF1 /* FileBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7DC3ED7933436FBB3B08AE /* FileBrowserView.swift */; };
-		7CB10869C1E742F7850AC463 /* FileEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C1C40675A47D9A7714CC2 /* FileEditorView.swift */; };
-		A5636082D6E548C380709F7E /* TerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C094F387B2494EBE98BD7E35 /* TerminalView.swift */; };
-		BB334BB4AB864ED4B1B07383 /* DeployView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD97C45C48C54F35806C4290 /* DeployView.swift */; };
-		BCF0696773E94EA2AFE2C793 /* ProjectSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546489649B74401AFB57047 /* ProjectSettingsView.swift */; };
-		762B8AD249A84EE4BD214937 /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF048B37D44C8AD8B880E /* JobsView.swift */; };
-		D3B83718A44F4248A47123F6 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A6F299027247939431C276 /* GalleryView.swift */; };
-		528C990663404F9A97DE3456 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16731A138C412E8BC3CE3F /* AccountView.swift */; };
-		7881B5F5592C45C19E538B1F /* GitHubSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B315AB51204653B5FAAFFA /* GitHubSignIn.swift */; };
-		28D3C16B30274E8B9B458642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C2797DF0E1F47A280A86BE7 /* Assets.xcassets */; };
-		A94FE5DE522043A298851521 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F96A7C7FAED44CD89EF03D7 /* Preview Assets.xcassets */; };
+		73A900143FF145DCB69A2CB5 /* LuisystemdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F39013051BD438ABAB89E96 /* LuisystemdApp.swift */; };
+		ACACCAFFA40E4DA2A509BC8C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A17884E43647A6BB306FCE /* Models.swift */; };
+		35CCCDE0DFFB45D6AF6B12B9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B0F73131312430E921C2DEF /* APIClient.swift */; };
+		CCDAE477802641689F6BFD43 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C55D7E060641E1B8C399DD /* SessionStore.swift */; };
+		CCAC363C97BA4EBDBDCAD868 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C364F9B836646CB993741F8 /* RootView.swift */; };
+		EF16CCE883D44FB187D21D00 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46D39988C14454A286979A /* LoginView.swift */; };
+		6C4B98E1937D4884B5A8872D /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A995D1A62A0040299318A609 /* MainTabView.swift */; };
+		9B27DA9B12F14F3884C3BE37 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F95F6D37A4244D59767DAAA /* ProjectsView.swift */; };
+		B33D3D08457248E6882D8853 /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DF58E3E1314462B09CDD23 /* ProjectDetailView.swift */; };
+		762FFEA8B986451B9F3F7325 /* FileBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E18C0E6312546798DAA739C /* FileBrowserView.swift */; };
+		AE26336845D5406BAE55826A /* FileEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6D3840B48A4D22AA0AD353 /* FileEditorView.swift */; };
+		CD17FC2AE1A1452792DF33EB /* TerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE38800EC31A47DA80FEF29C /* TerminalView.swift */; };
+		77ECF2C8AB664BBAA64E2186 /* DeployView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04248B6B9313485E94D2E324 /* DeployView.swift */; };
+		4A7E6D20B7C3471BA7D722D2 /* ProjectSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FF1B4E33449208EA16096 /* ProjectSettingsView.swift */; };
+		231B356BE8F14DCB9D27EF66 /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F522BE2EC68417E8F069390 /* JobsView.swift */; };
+		174E41A388C74E1185C49F9D /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B08F17995470587CCCA7A /* GalleryView.swift */; };
+		E8783685F0DD4C22948F367F /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D017781A59664F91959CDE69 /* AccountView.swift */; };
+		5469E578A1004B4DBFA2BBBD /* GitHubSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA07EC1E57AA444782AF819C /* GitHubSignIn.swift */; };
+		6F3B1A3C6489477E97649383 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C70BCD1A7B274DBDB2EEE0B7 /* Assets.xcassets */; };
+		0CF3F155F6484784A574BE72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36A1EE44A5604EB99585CCDC /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A38585A9B0A64B2A89E5B4C9 /* LuisystemdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuisystemdApp.swift; sourceTree = "<group>"; };
-		EA3C260D70594D82BFB57AB7 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		26F003102B304C63A83709A7 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		991567F58CC749BFB10AA09A /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
-		BD34ED4CD9884A73847FF6C9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		9AD8AA8753C1480DA0D54119 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		63DB9CB1DADF4D04ADDB6865 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		A93164AE2AF64BDD86920B18 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
-		ED80E23EB3B944018B525F55 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
-		0D7DC3ED7933436FBB3B08AE /* FileBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileBrowserView.swift; sourceTree = "<group>"; };
-		F47C1C40675A47D9A7714CC2 /* FileEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileEditorView.swift; sourceTree = "<group>"; };
-		C094F387B2494EBE98BD7E35 /* TerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalView.swift; sourceTree = "<group>"; };
-		BD97C45C48C54F35806C4290 /* DeployView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployView.swift; sourceTree = "<group>"; };
-		B546489649B74401AFB57047 /* ProjectSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettingsView.swift; sourceTree = "<group>"; };
-		A5DDF048B37D44C8AD8B880E /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
-		47A6F299027247939431C276 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
-		8B16731A138C412E8BC3CE3F /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
-		03B315AB51204653B5FAAFFA /* GitHubSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSignIn.swift; sourceTree = "<group>"; };
-		9C2797DF0E1F47A280A86BE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0F96A7C7FAED44CD89EF03D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3688E197854C4742BE8A4971 /* Luisystemd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luisystemd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F39013051BD438ABAB89E96 /* LuisystemdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuisystemdApp.swift; sourceTree = "<group>"; };
+		66A17884E43647A6BB306FCE /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		1B0F73131312430E921C2DEF /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		54C55D7E060641E1B8C399DD /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		5C364F9B836646CB993741F8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		FA46D39988C14454A286979A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A995D1A62A0040299318A609 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		8F95F6D37A4244D59767DAAA /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		46DF58E3E1314462B09CDD23 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
+		5E18C0E6312546798DAA739C /* FileBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileBrowserView.swift; sourceTree = "<group>"; };
+		1B6D3840B48A4D22AA0AD353 /* FileEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileEditorView.swift; sourceTree = "<group>"; };
+		BE38800EC31A47DA80FEF29C /* TerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalView.swift; sourceTree = "<group>"; };
+		04248B6B9313485E94D2E324 /* DeployView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployView.swift; sourceTree = "<group>"; };
+		821FF1B4E33449208EA16096 /* ProjectSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettingsView.swift; sourceTree = "<group>"; };
+		0F522BE2EC68417E8F069390 /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
+		1F1B08F17995470587CCCA7A /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		D017781A59664F91959CDE69 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		EA07EC1E57AA444782AF819C /* GitHubSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSignIn.swift; sourceTree = "<group>"; };
+		C70BCD1A7B274DBDB2EEE0B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		36A1EE44A5604EB99585CCDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		878728444A144C60AB4A3A74 /* Luisystemd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luisystemd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5419FDA977C14C4494FDBB87 /* Frameworks */ = {
+		C0AA8E94EB064DAC8C165FFD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,40 +64,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CBE8856C22904998A313D2DC = {
+		C3A9BD6EBA104633ACFB9D53 = {
 			isa = PBXGroup;
 			children = (
-				C6187165EA8449C2A3D5DC08 /* Luisystemd */,
-				8E87556B1A2B4DE2945DAB39 /* Products */,
+				6AFE731683394EE0ABF5ABCA /* Luisystemd */,
+				82E5FC0278CE4663BEE63A34 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		8E87556B1A2B4DE2945DAB39 /* Products */ = {
+		82E5FC0278CE4663BEE63A34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3688E197854C4742BE8A4971 /* Luisystemd.app */,
+				878728444A144C60AB4A3A74 /* Luisystemd.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C6187165EA8449C2A3D5DC08 /* Luisystemd */ = {
+		6AFE731683394EE0ABF5ABCA /* Luisystemd */ = {
 			isa = PBXGroup;
-			children = (A38585A9B0A64B2A89E5B4C9 /* LuisystemdApp.swift */, EA3C260D70594D82BFB57AB7 /* Models.swift */, 26F003102B304C63A83709A7 /* APIClient.swift */, 991567F58CC749BFB10AA09A /* SessionStore.swift */, BD34ED4CD9884A73847FF6C9 /* RootView.swift */, 9AD8AA8753C1480DA0D54119 /* LoginView.swift */, 63DB9CB1DADF4D04ADDB6865 /* MainTabView.swift */, A93164AE2AF64BDD86920B18 /* ProjectsView.swift */, ED80E23EB3B944018B525F55 /* ProjectDetailView.swift */, 0D7DC3ED7933436FBB3B08AE /* FileBrowserView.swift */, F47C1C40675A47D9A7714CC2 /* FileEditorView.swift */, C094F387B2494EBE98BD7E35 /* TerminalView.swift */, BD97C45C48C54F35806C4290 /* DeployView.swift */, B546489649B74401AFB57047 /* ProjectSettingsView.swift */, A5DDF048B37D44C8AD8B880E /* JobsView.swift */, 47A6F299027247939431C276 /* GalleryView.swift */, 8B16731A138C412E8BC3CE3F /* AccountView.swift */, 03B315AB51204653B5FAAFFA /* GitHubSignIn.swift */, B43835057E8D4D1FA7F87CCB /* Assets.xcassets */, 4C6E45BC5401408B83A63169 /* Preview Content */);
+			children = (2F39013051BD438ABAB89E96 /* LuisystemdApp.swift */, 66A17884E43647A6BB306FCE /* Models.swift */, 1B0F73131312430E921C2DEF /* APIClient.swift */, 54C55D7E060641E1B8C399DD /* SessionStore.swift */, 5C364F9B836646CB993741F8 /* RootView.swift */, FA46D39988C14454A286979A /* LoginView.swift */, A995D1A62A0040299318A609 /* MainTabView.swift */, 8F95F6D37A4244D59767DAAA /* ProjectsView.swift */, 46DF58E3E1314462B09CDD23 /* ProjectDetailView.swift */, 5E18C0E6312546798DAA739C /* FileBrowserView.swift */, 1B6D3840B48A4D22AA0AD353 /* FileEditorView.swift */, BE38800EC31A47DA80FEF29C /* TerminalView.swift */, 04248B6B9313485E94D2E324 /* DeployView.swift */, 821FF1B4E33449208EA16096 /* ProjectSettingsView.swift */, 0F522BE2EC68417E8F069390 /* JobsView.swift */, 1F1B08F17995470587CCCA7A /* GalleryView.swift */, D017781A59664F91959CDE69 /* AccountView.swift */, EA07EC1E57AA444782AF819C /* GitHubSignIn.swift */, 470894559FB0412890CE6971 /* Assets.xcassets */, A200C03B7ECC42F795CDBE9D /* Preview Content */);
 			path = Luisystemd;
 			sourceTree = "<group>";
 		};
-		B43835057E8D4D1FA7F87CCB /* Assets.xcassets */ = {
+		470894559FB0412890CE6971 /* Assets.xcassets */ = {
 			isa = PBXGroup;
 			children = (
-				9C2797DF0E1F47A280A86BE7 /* Assets.xcassets */,
+				C70BCD1A7B274DBDB2EEE0B7 /* Assets.xcassets */,
 			);
 			name = Assets.xcassets;
 			sourceTree = "<group>";
 		};
-		4C6E45BC5401408B83A63169 /* Preview Content */ = {
+		A200C03B7ECC42F795CDBE9D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				0F96A7C7FAED44CD89EF03D7 /* Preview Assets.xcassets */,
+				36A1EE44A5604EB99585CCDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -105,13 +105,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		85D93C1362B04EF5954C8854 /* Luisystemd */ = {
+		806E1B689EC6496093E3C354 /* Luisystemd */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED8654D7E43E4DE2AC2B5604 /* Build configuration list for PBXNativeTarget "Luisystemd" */;
+			buildConfigurationList = 3DC2779B2F0D49BFB8A4F9E4 /* Build configuration list for PBXNativeTarget "Luisystemd" */;
 			buildPhases = (
-				85CEB99EBD1E414297EF9D1A /* Sources */,
-				5419FDA977C14C4494FDBB87 /* Frameworks */,
-				8D07A26EB7AD4507957E4219 /* Resources */,
+				2C4EEF5DCD8E4F73BE55C4B2 /* Sources */,
+				C0AA8E94EB064DAC8C165FFD /* Frameworks */,
+				06EB51AB60874B478D2E6D1E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -119,25 +119,25 @@
 			);
 			name = Luisystemd;
 			productName = Luisystemd;
-			productReference = 3688E197854C4742BE8A4971 /* Luisystemd.app */;
+			productReference = 878728444A144C60AB4A3A74 /* Luisystemd.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6BF4D1ABA2804F0F8445C489 /* Project object */ = {
+		0FB230FF904B46EF9ADA587E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					85D93C1362B04EF5954C8854 = {
+					806E1B689EC6496093E3C354 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = FF463283FBB540DE974C5D8C /* Build configuration list for PBXProject "Luisystemd" */;
+			buildConfigurationList = A9BE1B5FF4BD4DA0A3EF8CE0 /* Build configuration list for PBXProject "Luisystemd" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,58 +145,58 @@
 				en,
 				Base,
 			);
-			mainGroup = CBE8856C22904998A313D2DC;
-			productRefGroup = 8E87556B1A2B4DE2945DAB39 /* Products */;
+			mainGroup = C3A9BD6EBA104633ACFB9D53;
+			productRefGroup = 82E5FC0278CE4663BEE63A34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				85D93C1362B04EF5954C8854 /* Luisystemd */,
+				806E1B689EC6496093E3C354 /* Luisystemd */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		8D07A26EB7AD4507957E4219 /* Resources */ = {
+		06EB51AB60874B478D2E6D1E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A94FE5DE522043A298851521 /* Preview Assets.xcassets in Resources */,
-				28D3C16B30274E8B9B458642 /* Assets.xcassets in Resources */,
+				0CF3F155F6484784A574BE72 /* Preview Assets.xcassets in Resources */,
+				6F3B1A3C6489477E97649383 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		85CEB99EBD1E414297EF9D1A /* Sources */ = {
+		2C4EEF5DCD8E4F73BE55C4B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9824BFD5A7C8464793D30083 /* LuisystemdApp.swift in Sources */,
-				8F29FCF4C92A40988A07B903 /* Models.swift in Sources */,
-				B712DCAE636A45AD9A133192 /* APIClient.swift in Sources */,
-				D3F51E0A07814C3EB5384FA9 /* SessionStore.swift in Sources */,
-				4D9CA4AAD81549A48AFC5A5F /* RootView.swift in Sources */,
-				7AD7345F685C4B26865921E1 /* LoginView.swift in Sources */,
-				8B3FBDA081214E379848BADE /* MainTabView.swift in Sources */,
-				1FCC3C9CE2984E1CB94A8608 /* ProjectsView.swift in Sources */,
-				EC208057EB114EB0B4271B7D /* ProjectDetailView.swift in Sources */,
-				95F90B1B44844654BB475AF1 /* FileBrowserView.swift in Sources */,
-				7CB10869C1E742F7850AC463 /* FileEditorView.swift in Sources */,
-				A5636082D6E548C380709F7E /* TerminalView.swift in Sources */,
-				BB334BB4AB864ED4B1B07383 /* DeployView.swift in Sources */,
-				BCF0696773E94EA2AFE2C793 /* ProjectSettingsView.swift in Sources */,
-				762B8AD249A84EE4BD214937 /* JobsView.swift in Sources */,
-				D3B83718A44F4248A47123F6 /* GalleryView.swift in Sources */,
-				528C990663404F9A97DE3456 /* AccountView.swift in Sources */,
-				7881B5F5592C45C19E538B1F /* GitHubSignIn.swift in Sources */,
+				73A900143FF145DCB69A2CB5 /* LuisystemdApp.swift in Sources */,
+				ACACCAFFA40E4DA2A509BC8C /* Models.swift in Sources */,
+				35CCCDE0DFFB45D6AF6B12B9 /* APIClient.swift in Sources */,
+				CCDAE477802641689F6BFD43 /* SessionStore.swift in Sources */,
+				CCAC363C97BA4EBDBDCAD868 /* RootView.swift in Sources */,
+				EF16CCE883D44FB187D21D00 /* LoginView.swift in Sources */,
+				6C4B98E1937D4884B5A8872D /* MainTabView.swift in Sources */,
+				9B27DA9B12F14F3884C3BE37 /* ProjectsView.swift in Sources */,
+				B33D3D08457248E6882D8853 /* ProjectDetailView.swift in Sources */,
+				762FFEA8B986451B9F3F7325 /* FileBrowserView.swift in Sources */,
+				AE26336845D5406BAE55826A /* FileEditorView.swift in Sources */,
+				CD17FC2AE1A1452792DF33EB /* TerminalView.swift in Sources */,
+				77ECF2C8AB664BBAA64E2186 /* DeployView.swift in Sources */,
+				4A7E6D20B7C3471BA7D722D2 /* ProjectSettingsView.swift in Sources */,
+				231B356BE8F14DCB9D27EF66 /* JobsView.swift in Sources */,
+				174E41A388C74E1185C49F9D /* GalleryView.swift in Sources */,
+				E8783685F0DD4C22948F367F /* AccountView.swift in Sources */,
+				5469E578A1004B4DBFA2BBBD /* GitHubSignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		CA0D25DEEC454FC99B4190C5 /* Debug */ = {
+		6F290131C2094D7598A71F68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -257,7 +257,7 @@
 			};
 			name = Debug;
 		};
-		6F67A2FD716D49A2A5FA6745 /* Release */ = {
+		718C7090B55E4C24A731EB70 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -311,7 +311,7 @@
 			};
 			name = Release;
 		};
-		32D866CDFE0F430DB8634713 /* Debug */ = {
+		93733BB59A1B4AEDAB47E6D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -327,7 +327,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.luishae.luismail";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luishae.luisystemd";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
@@ -335,7 +335,7 @@
 			};
 			name = Debug;
 		};
-		E3F63D2D01944E678E3FFEC7 /* Release */ = {
+		3568396403F742008C5D0FB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -351,7 +351,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.luishae.luismail";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luishae.luisystemd";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 6.0;
@@ -362,25 +362,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FF463283FBB540DE974C5D8C /* Build configuration list for PBXProject "Luisystemd" */ = {
+		A9BE1B5FF4BD4DA0A3EF8CE0 /* Build configuration list for PBXProject "Luisystemd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CA0D25DEEC454FC99B4190C5 /* Debug */,
-				6F67A2FD716D49A2A5FA6745 /* Release */,
+				6F290131C2094D7598A71F68 /* Debug */,
+				718C7090B55E4C24A731EB70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED8654D7E43E4DE2AC2B5604 /* Build configuration list for PBXNativeTarget "Luisystemd" */ = {
+		3DC2779B2F0D49BFB8A4F9E4 /* Build configuration list for PBXNativeTarget "Luisystemd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				32D866CDFE0F430DB8634713 /* Debug */,
-				E3F63D2D01944E678E3FFEC7 /* Release */,
+				93733BB59A1B4AEDAB47E6D4 /* Debug */,
+				3568396403F742008C5D0FB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6BF4D1ABA2804F0F8445C489 /* Project object */;
+	rootObject = 0FB230FF904B46EF9ADA587E /* Project object */;
 }

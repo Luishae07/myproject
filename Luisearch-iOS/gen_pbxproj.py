@@ -378,7 +378,7 @@ pbxproj = f"""// !$*UTF8*$!
 \t\t\t\t\t"@executable_path/Frameworks",
 \t\t\t\t);
 \t\t\t\tMARKETING_VERSION = 1.0;
-\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = "com.luishae.luismail";
+\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = "com.luishae.luisearch";
 \t\t\t\tPRODUCT_NAME = "$(TARGET_NAME)";
 \t\t\t\tSWIFT_EMIT_LOC_STRINGS = YES;
 \t\t\t\tSWIFT_VERSION = 6.0;
@@ -409,7 +409,7 @@ pbxproj = f"""// !$*UTF8*$!
 \t\t\t\t\t"@executable_path/Frameworks",
 \t\t\t\t);
 \t\t\t\tMARKETING_VERSION = 1.0;
-\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = "com.luishae.luismail";
+\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = "com.luishae.luisearch";
 \t\t\t\tPRODUCT_NAME = "$(TARGET_NAME)";
 \t\t\t\tSWIFT_EMIT_LOC_STRINGS = YES;
 \t\t\t\tSWIFT_VERSION = 6.0;

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3A11F399D189440EAFE33695"
+               BlueprintIdentifier = "5701D11C580E4864B4518388"
                BuildableName = "Luisearch.app"
                BlueprintName = "Luisearch"
                ReferencedContainer = "container:Luisearch.xcodeproj">
@@ -44,7 +44,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3A11F399D189440EAFE33695"
+            BlueprintIdentifier = "5701D11C580E4864B4518388"
             BuildableName = "Luisearch.app"
             BlueprintName = "Luisearch"
             ReferencedContainer = "container:Luisearch.xcodeproj">
@@ -61,7 +61,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3A11F399D189440EAFE33695"
+            BlueprintIdentifier = "5701D11C580E4864B4518388"
             BuildableName = "Luisearch.app"
             BlueprintName = "Luisearch"
             ReferencedContainer = "container:Luisearch.xcodeproj">

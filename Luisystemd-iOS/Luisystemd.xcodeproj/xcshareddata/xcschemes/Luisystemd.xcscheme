@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "85D93C1362B04EF5954C8854"
+               BlueprintIdentifier = "806E1B689EC6496093E3C354"
                BuildableName = "Luisystemd.app"
                BlueprintName = "Luisystemd"
                ReferencedContainer = "container:Luisystemd.xcodeproj">
@@ -44,7 +44,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85D93C1362B04EF5954C8854"
+            BlueprintIdentifier = "806E1B689EC6496093E3C354"
             BuildableName = "Luisystemd.app"
             BlueprintName = "Luisystemd"
             ReferencedContainer = "container:Luisystemd.xcodeproj">
@@ -61,7 +61,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "85D93C1362B04EF5954C8854"
+            BlueprintIdentifier = "806E1B689EC6496093E3C354"
             BuildableName = "Luisystemd.app"
             BlueprintName = "Luisystemd"
             ReferencedContainer = "container:Luisystemd.xcodeproj">
