@@ -22,6 +22,7 @@ SWIFT_FILES = [
     "VideoResultsView.swift",
     "AudioResultsView.swift",
     "DownloadResultsView.swift",
+    "SettingsView.swift",
 ]
 
 ids = {}
