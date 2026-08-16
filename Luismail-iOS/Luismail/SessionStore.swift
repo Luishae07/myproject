@@ -1,4 +1,5 @@
 import Foundation
+import WidgetKit
 
 @MainActor
 final class SessionStore: ObservableObject {
@@ -14,6 +15,11 @@ final class SessionStore: ObservableObject {
 
     private let addressKey = "luismail_address"
     private let passwordKey = "luismail_password"
+    // Widget extensions run in a separate process and can't see the app's
+    // UserDefaults.standard -- an App Group suite is the shared storage
+    // both processes can read/write.
+    private let appGroupID = "group.com.luishae.luismail"
+    private var sharedDefaults: UserDefaults? { UserDefaults(suiteName: appGroupID) }
 
     private var webSocketTask: URLSessionWebSocketTask?
     private var wsReconnectTask: Task<Void, Never>?
@@ -72,12 +78,16 @@ final class SessionStore: ObservableObject {
         messages = []
         UserDefaults.standard.removeObject(forKey: addressKey)
         UserDefaults.standard.removeObject(forKey: passwordKey)
+        sharedDefaults?.removeObject(forKey: "luismail.address")
+        sharedDefaults?.removeObject(forKey: "luismail.password")
+        WidgetCenter.shared.reloadAllTimelines()
     }
 
     func refreshInbox() async {
         guard let address, let password else { return }
         do {
             messages = try await APIClient.inbox(address: address, password: password).sorted { $0.ts > $1.ts }
+            WidgetCenter.shared.reloadAllTimelines()
         } catch {
             errorMessage = error.localizedDescription
         }
@@ -126,6 +136,9 @@ final class SessionStore: ObservableObject {
         self.password = password
         UserDefaults.standard.set(address, forKey: addressKey)
         UserDefaults.standard.set(password, forKey: passwordKey)
+        sharedDefaults?.set(address, forKey: "luismail.address")
+        sharedDefaults?.set(password, forKey: "luismail.password")
+        WidgetCenter.shared.reloadAllTimelines()
     }
 
     // MARK: - Real-time (WebSocket, mirrors the web frontend's ws_bridge client)

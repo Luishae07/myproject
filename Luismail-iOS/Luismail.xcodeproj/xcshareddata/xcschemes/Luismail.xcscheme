@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "785E81213AA944538415DDC9"
+               BlueprintIdentifier = "8B9AA8F2B698496DAF24E189"
                BuildableName = "Luismail.app"
                BlueprintName = "Luismail"
                ReferencedContainer = "container:Luismail.xcodeproj">
@@ -44,7 +44,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "785E81213AA944538415DDC9"
+            BlueprintIdentifier = "8B9AA8F2B698496DAF24E189"
             BuildableName = "Luismail.app"
             BlueprintName = "Luismail"
             ReferencedContainer = "container:Luismail.xcodeproj">
@@ -61,7 +61,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "785E81213AA944538415DDC9"
+            BlueprintIdentifier = "8B9AA8F2B698496DAF24E189"
             BuildableName = "Luismail.app"
             BlueprintName = "Luismail"
             ReferencedContainer = "container:Luismail.xcodeproj">
