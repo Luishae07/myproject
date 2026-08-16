@@ -14,8 +14,8 @@ private func storedCredentials() -> (address: String, password: String)? {
 }
 
 struct GetUnreadCountIntent: AppIntent {
-    static var title: LocalizedStringResource = "Get Luismail Unread Count"
-    static var description = IntentDescription("Returns how many unread, non-spam messages are in your Luismail inbox.")
+    static var title: LocalizedStringResource { "Get Luismail Unread Count" }
+    static var description: IntentDescription { IntentDescription("Returns how many unread, non-spam messages are in your Luismail inbox.") }
 
     func perform() async throws -> some IntentResult & ReturnsValue<Int> {
         guard let creds = storedCredentials() else {
@@ -28,8 +28,8 @@ struct GetUnreadCountIntent: AppIntent {
 }
 
 struct GetLatestMessageIntent: AppIntent {
-    static var title: LocalizedStringResource = "Get Latest Luismail Message"
-    static var description = IntentDescription("Returns the sender and subject of your most recent Luismail message.")
+    static var title: LocalizedStringResource { "Get Latest Luismail Message" }
+    static var description: IntentDescription { IntentDescription("Returns the sender and subject of your most recent Luismail message.") }
 
     func perform() async throws -> some IntentResult & ReturnsValue<String> {
         guard let creds = storedCredentials() else {
@@ -45,8 +45,8 @@ struct GetLatestMessageIntent: AppIntent {
 }
 
 struct SendLuismailIntent: AppIntent {
-    static var title: LocalizedStringResource = "Send Luismail"
-    static var description = IntentDescription("Sends a message through your Luismail account.")
+    static var title: LocalizedStringResource { "Send Luismail" }
+    static var description: IntentDescription { IntentDescription("Sends a message through your Luismail account.") }
 
     @Parameter(title: "To", description: "e.g. bob/luismail.pages.dev")
     var to: String
