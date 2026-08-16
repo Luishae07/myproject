@@ -19,8 +19,8 @@ struct ImageResultsView: View {
             } else {
                 LazyVGrid(columns: columns, spacing: 6) {
                     ForEach(results) { img in
-                        Link(destination: URL(string: img.page_url ?? img.src) ?? URL(string: img.src)!) {
-                            AsyncImage(url: URL(string: img.src)) { image in
+                        Link(destination: URL(string: img.page_url ?? "") ?? img.resolvedURL ?? URL(string: API.base)!) {
+                            AsyncImage(url: img.resolvedURL) { image in
                                 image.resizable().aspectRatio(contentMode: .fill)
                             } placeholder: {
                                 Rectangle().fill(.quaternary)

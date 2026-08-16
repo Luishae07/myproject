@@ -25,6 +25,17 @@ struct ImageResult: Identifiable, Decodable {
     let src: String
     let page_url: String?
     let alt: String?
+
+    // The backend returns img-cache src as a path relative to the tunnel
+    // host (e.g. "/api/img-cache?u=..."), same as the web frontend's
+    // resolveImgSrc() -- URL(string:) on a bare path has no scheme/host so
+    // it silently fails to load without this.
+    var resolvedURL: URL? {
+        if src.hasPrefix("/api/img-cache") {
+            return URL(string: API.base + src)
+        }
+        return URL(string: src)
+    }
 }
 
 struct ImageSearchResponse: Decodable {
