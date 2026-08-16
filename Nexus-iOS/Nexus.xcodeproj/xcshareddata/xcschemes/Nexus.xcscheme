@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A9FA37D4F0824B14ADFCE3FD"
+               BlueprintIdentifier = "B34DD7A59FA048689F5C13D6"
                BuildableName = "Nexus.app"
                BlueprintName = "Nexus"
                ReferencedContainer = "container:Nexus.xcodeproj">
@@ -44,7 +44,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A9FA37D4F0824B14ADFCE3FD"
+            BlueprintIdentifier = "B34DD7A59FA048689F5C13D6"
             BuildableName = "Nexus.app"
             BlueprintName = "Nexus"
             ReferencedContainer = "container:Nexus.xcodeproj">
@@ -61,7 +61,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A9FA37D4F0824B14ADFCE3FD"
+            BlueprintIdentifier = "B34DD7A59FA048689F5C13D6"
             BuildableName = "Nexus.app"
             BlueprintName = "Nexus"
             ReferencedContainer = "container:Nexus.xcodeproj">

@@ -14,21 +14,33 @@ struct ServerListView: View {
                 } else if let errorText {
                     ContentUnavailableView(errorText, systemImage: "exclamationmark.triangle")
                 } else {
-                    List(servers) { server in
-                        NavigationLink(value: server) {
-                            HStack(spacing: 12) {
-                                ServerIconView(icon: server.icon, name: server.name)
-                                VStack(alignment: .leading, spacing: 2) {
-                                    Text(server.name).font(.headline)
-                                    if server.id == "lobby" {
-                                        Text("Default").font(.caption).foregroundStyle(.secondary)
+                    ScrollView {
+                        LazyVStack(spacing: 10) {
+                            ForEach(servers) { server in
+                                NavigationLink(value: server) {
+                                    HStack(spacing: 14) {
+                                        ServerIconView(icon: server.icon, name: server.name)
+                                        VStack(alignment: .leading, spacing: 2) {
+                                            Text(server.name)
+                                                .font(.headline)
+                                                .foregroundStyle(.primary)
+                                            if server.id == "lobby" {
+                                                Text("Default").font(.caption).foregroundStyle(.secondary)
+                                            }
+                                        }
+                                        Spacer()
+                                        Image(systemName: "chevron.right")
+                                            .font(.caption)
+                                            .foregroundStyle(.tertiary)
                                     }
+                                    .padding(12)
+                                    .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 16))
                                 }
+                                .buttonStyle(.plain)
                             }
-                            .padding(.vertical, 4)
                         }
+                        .padding()
                     }
-                    .listStyle(.plain)
                 }
             }
             .navigationTitle("Servers")

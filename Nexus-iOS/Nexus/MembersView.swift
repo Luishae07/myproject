@@ -15,7 +15,7 @@ struct MembersView: View {
                 } else {
                     List(members) { member in
                         HStack(spacing: 12) {
-                            ServerIconView(icon: member.avatar, name: member.username, size: 36)
+                            AvatarView(username: member.username, avatarURL: member.avatar, size: 36)
                             VStack(alignment: .leading, spacing: 2) {
                                 HStack(spacing: 6) {
                                     Text(member.username).font(.subheadline.weight(.medium))

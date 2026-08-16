@@ -17,7 +17,19 @@ struct ChannelListView: View {
             } else {
                 List(channels) { channel in
                     NavigationLink(value: channel) {
-                        Label(channel.name, systemImage: channel.iconName)
+                        HStack(spacing: 10) {
+                            Image(systemName: channel.iconName)
+                                .font(.subheadline)
+                                .foregroundStyle(Color.accentColor)
+                                .frame(width: 20)
+                            VStack(alignment: .leading, spacing: 1) {
+                                Text(channel.name).font(.subheadline.weight(.medium))
+                                if let topic = channel.topic, !topic.isEmpty {
+                                    Text(topic).font(.caption).foregroundStyle(.secondary).lineLimit(1)
+                                }
+                            }
+                        }
+                        .padding(.vertical, 3)
                     }
                 }
                 .listStyle(.plain)

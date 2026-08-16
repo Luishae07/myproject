@@ -18,7 +18,7 @@ struct DMListView: View {
                             ChannelMessagesView(channel: NexusChannel(id: dm.channel_id, name: dm.user, topic: nil, position: nil, type: "dm"))
                         } label: {
                             HStack(spacing: 12) {
-                                ServerIconView(icon: dm.avatar, name: dm.user, size: 40)
+                                AvatarView(username: dm.user, avatarURL: dm.avatar, size: 40)
                                 VStack(alignment: .leading, spacing: 2) {
                                     HStack(spacing: 6) {
                                         Text(dm.user).font(.subheadline.weight(.semibold))

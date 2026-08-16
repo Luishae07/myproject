@@ -197,58 +197,68 @@ private struct MessageRow: View {
     @State private var showingReactionPicker = false
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 5) {
-            HStack(spacing: 6) {
-                Text(message.author)
-                    .font(.subheadline.weight(.semibold))
-                if let created = message.created_at {
-                    Text(created)
+        HStack(alignment: .top, spacing: 10) {
+            AvatarView(username: message.author, avatarURL: nil, size: 36)
+
+            VStack(alignment: .leading, spacing: 5) {
+                HStack(spacing: 6) {
+                    Text(message.author)
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(Color.forUsername(message.author))
+                    Text(NexusDate.short(message.created_at))
                         .font(.caption2)
                         .foregroundStyle(.secondary)
                 }
-            }
-            if let content = message.content, !content.isEmpty {
-                Text(content)
-                    .font(.body)
-                    .textSelection(.enabled)
-            }
-            ForEach(message.attachmentList, id: \.url) { att in
-                if let url = URL(string: att.url) {
-                    if att.type == "video" {
-                        LoopingVideoView(url: url)
-                            .frame(height: 180)
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
-                    } else {
-                        AsyncImage(url: url) { image in
-                            image.resizable().aspectRatio(contentMode: .fit)
-                        } placeholder: {
-                            ProgressView().frame(height: 100)
+
+                if let content = message.content, !content.isEmpty {
+                    Text(content)
+                        .font(.body)
+                        .textSelection(.enabled)
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 8)
+                        .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 14))
+                }
+
+                ForEach(message.attachmentList, id: \.url) { att in
+                    if let url = URL(string: att.url) {
+                        if att.type == "video" {
+                            LoopingVideoView(url: url)
+                                .frame(height: 180)
+                                .clipShape(RoundedRectangle(cornerRadius: 12))
+                        } else {
+                            AsyncImage(url: url) { image in
+                                image.resizable().aspectRatio(contentMode: .fit)
+                            } placeholder: {
+                                ProgressView().frame(height: 100)
+                            }
+                            .frame(maxHeight: 220)
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
                         }
-                        .frame(maxHeight: 220)
-                        .clipShape(RoundedRectangle(cornerRadius: 10))
                     }
                 }
-            }
-            if let poll = message.poll {
-                PollView(poll: poll, onVote: onVote)
-            }
-            if let reactions = message.reactions, !reactions.isEmpty {
-                HStack(spacing: 6) {
-                    ForEach(reactions, id: \.emoji) { r in
-                        Button {
-                            onReact(r.emoji)
-                        } label: {
-                            Text("\(r.emoji) \(r.count)")
-                                .font(.caption)
-                                .padding(.horizontal, 8).padding(.vertical, 3)
-                                .background(.thinMaterial, in: .capsule)
+
+                if let poll = message.poll {
+                    PollView(poll: poll, onVote: onVote)
+                }
+
+                if let reactions = message.reactions, !reactions.isEmpty {
+                    HStack(spacing: 6) {
+                        ForEach(reactions, id: \.emoji) { r in
+                            Button {
+                                onReact(r.emoji)
+                            } label: {
+                                Text("\(r.emoji) \(r.count)")
+                                    .font(.caption)
+                                    .padding(.horizontal, 8).padding(.vertical, 3)
+                                    .background(.thinMaterial, in: .capsule)
+                            }
+                            .buttonStyle(.plain)
                         }
-                        .buttonStyle(.plain)
+                        reactButton
                     }
+                } else {
                     reactButton
                 }
-            } else {
-                reactButton
             }
         }
         .contextMenu {

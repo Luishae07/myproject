@@ -29,6 +29,7 @@ SWIFT_FILES = [
     "AccountView.swift",
     "GifPickerView.swift",
     "PollComposerView.swift",
+    "Utilities.swift",
 ]
 
 ids = {}
