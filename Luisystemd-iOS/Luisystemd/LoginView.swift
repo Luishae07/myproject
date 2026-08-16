@@ -1,4 +1,5 @@
 import SwiftUI
+import AuthenticationServices
 
 struct LoginView: View {
     @EnvironmentObject var session: SessionStore
@@ -7,6 +8,7 @@ struct LoginView: View {
     @State private var isSignup = false
     @State private var isLoading = false
     @State private var errorText: String?
+    @State private var githubSignIn = GitHubSignIn()
 
     var body: some View {
         ZStack {
@@ -63,6 +65,24 @@ struct LoginView: View {
                         }
                         .font(.footnote)
                         .foregroundStyle(.white.opacity(0.8))
+
+                        HStack {
+                            Rectangle().fill(.white.opacity(0.2)).frame(height: 1)
+                            Text("or").font(.caption).foregroundStyle(.white.opacity(0.6))
+                            Rectangle().fill(.white.opacity(0.2)).frame(height: 1)
+                        }
+                        .padding(.vertical, 4)
+
+                        Button {
+                            Task { await signInWithGitHub() }
+                        } label: {
+                            Label("Continue with GitHub", systemImage: "chevron.left.forwardslash.chevron.right")
+                                .frame(maxWidth: .infinity)
+                                .padding(.vertical, 4)
+                        }
+                        .buttonStyle(.glass)
+                        .foregroundStyle(.white)
+                        .disabled(isLoading)
                     }
                     .padding(.horizontal, 24)
                 }
@@ -79,6 +99,20 @@ struct LoginView: View {
                 ? try await APIClient.signup(username: username, password: password)
                 : try await APIClient.login(username: username, password: password)
             session.setSession(username: resp.username, apiKey: resp.key)
+        } catch {
+            errorText = error.localizedDescription
+        }
+        isLoading = false
+    }
+
+    private func signInWithGitHub() async {
+        isLoading = true
+        errorText = nil
+        do {
+            let result = try await githubSignIn.signIn()
+            session.setSession(username: result.username, apiKey: result.apiKey)
+        } catch let authError as ASWebAuthenticationSessionError where authError.code == .canceledLogin {
+            // user dismissed the sheet -- not a real error
         } catch {
             errorText = error.localizedDescription
         }

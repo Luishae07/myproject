@@ -30,6 +30,7 @@ SWIFT_FILES = [
     "JobsView.swift",
     "GalleryView.swift",
     "AccountView.swift",
+    "GitHubSignIn.swift",
 ]
 
 ids = {}
@@ -371,14 +372,7 @@ pbxproj = f"""// !$*UTF8*$!
 \t\t\t\tCURRENT_PROJECT_VERSION = 1;
 \t\t\t\tDEVELOPMENT_ASSET_PATHS = "\\"Luisystemd/Preview Content\\"";
 \t\t\t\tENABLE_PREVIEWS = YES;
-\t\t\t\tGENERATE_INFOPLIST_FILE = YES;
-\t\t\t\tINFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-\t\t\t\tINFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-\t\t\t\tINFOPLIST_KEY_UILaunchScreen_Generation = YES;
-\t\t\t\tINFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
-\t\t\t\tINFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-\t\t\t\tINFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-\t\t\t\tINFOPLIST_KEY_CFBundleDisplayName = Luisystemd;
+\t\t\t\tINFOPLIST_FILE = Luisystemd/Info.plist;
 \t\t\t\tIPHONEOS_DEPLOYMENT_TARGET = 26.0;
 \t\t\t\tLD_RUNPATH_SEARCH_PATHS = (
 \t\t\t\t\t"$(inherited)",
@@ -402,14 +396,7 @@ pbxproj = f"""// !$*UTF8*$!
 \t\t\t\tCURRENT_PROJECT_VERSION = 1;
 \t\t\t\tDEVELOPMENT_ASSET_PATHS = "\\"Luisystemd/Preview Content\\"";
 \t\t\t\tENABLE_PREVIEWS = YES;
-\t\t\t\tGENERATE_INFOPLIST_FILE = YES;
-\t\t\t\tINFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-\t\t\t\tINFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-\t\t\t\tINFOPLIST_KEY_UILaunchScreen_Generation = YES;
-\t\t\t\tINFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
-\t\t\t\tINFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-\t\t\t\tINFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-\t\t\t\tINFOPLIST_KEY_CFBundleDisplayName = Luisystemd;
+\t\t\t\tINFOPLIST_FILE = Luisystemd/Info.plist;
 \t\t\t\tIPHONEOS_DEPLOYMENT_TARGET = 26.0;
 \t\t\t\tLD_RUNPATH_SEARCH_PATHS = (
 \t\t\t\t\t"$(inherited)",

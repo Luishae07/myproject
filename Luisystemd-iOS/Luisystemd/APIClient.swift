@@ -54,6 +54,15 @@ enum APIClient {
         try await request("/api/account/signup", method: "POST", json: ["username": username, "password": password])
     }
 
+    /// The real GitHub sign-in URL, same web OAuth flow the desktop/mobile
+    /// frontends use -- `client=ios` tells the backend to bounce back via
+    /// the app's custom URL scheme instead of redirecting to the pages.dev
+    /// frontend (see GitHubSignInView for the ASWebAuthenticationSession
+    /// side of this).
+    static var githubSignInURL: URL {
+        URL(string: "\(API.base)/api/oauth/github/start?client=ios")!
+    }
+
     // MARK: - projects
 
     static func projects(apiKey: String) async throws -> [Project] {

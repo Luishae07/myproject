@@ -7,52 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2CD2FD7E254B40BCA895A4EC /* LuisystemdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16F429F2B3C146A99A920222 /* LuisystemdApp.swift */; };
-		9A719DE9CB43412293094513 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD346F89B9C4CA696D5A50C /* Models.swift */; };
-		C568C7BC98754EEFAB657F54 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6D68BC610A4B63A22F23E5 /* APIClient.swift */; };
-		E7A1AF06F154489BA8E398FF /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF24F8512F74D34B88A1813 /* SessionStore.swift */; };
-		DF8F2C83EA8A4A7EB3CC063D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380F8DE3994B48EE9F51BEFD /* RootView.swift */; };
-		A531831399DA4651BB9BD701 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CF2D7D376FF4400AB67645A /* LoginView.swift */; };
-		004C1059D9E64B7DA1BCCB89 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD7665F4E5F409E8A585661 /* MainTabView.swift */; };
-		E1DE43599DA541F296DA4253 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417E5050DB88493096BB359A /* ProjectsView.swift */; };
-		00BD593FBB5E40F0AD746D6F /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7700C8D8A5402AA5BE5C34 /* ProjectDetailView.swift */; };
-		E4199551379A49E892EF0E23 /* FileBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3831D898CF46BEB4E0F9C3 /* FileBrowserView.swift */; };
-		72C658B154624154BA7A7BED /* FileEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178428F71F364E03B8BF13D2 /* FileEditorView.swift */; };
-		689FCE19CEEB4B26B5ECDCC6 /* TerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5439AA0F4A70462FA1E06D29 /* TerminalView.swift */; };
-		E78187C91E4C432C87D04188 /* DeployView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1FC82C17EF42B4A0EF45CD /* DeployView.swift */; };
-		E4E2AACA39A8444F8388B647 /* ProjectSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5C6FEEB62046C8AE8D989F /* ProjectSettingsView.swift */; };
-		94D1D81F534746E9BFCD494F /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D03DC59CC94139A5BC65CB /* JobsView.swift */; };
-		C37CD6BCA40349BE99F9ABC9 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC50832222648B29A79F0C1 /* GalleryView.swift */; };
-		7CF6D0325E764A4D82F5C946 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DEC7E875474408A84069DB /* AccountView.swift */; };
-		73C01BDC51C54DD089C6114B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F8CB83A0C74A89B51C1BD7 /* Assets.xcassets */; };
-		01AEA45F77BA485FBF4068B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E66FC6CCE60D4310AADE16CB /* Preview Assets.xcassets */; };
+		9824BFD5A7C8464793D30083 /* LuisystemdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38585A9B0A64B2A89E5B4C9 /* LuisystemdApp.swift */; };
+		8F29FCF4C92A40988A07B903 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C260D70594D82BFB57AB7 /* Models.swift */; };
+		B712DCAE636A45AD9A133192 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F003102B304C63A83709A7 /* APIClient.swift */; };
+		D3F51E0A07814C3EB5384FA9 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991567F58CC749BFB10AA09A /* SessionStore.swift */; };
+		4D9CA4AAD81549A48AFC5A5F /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD34ED4CD9884A73847FF6C9 /* RootView.swift */; };
+		7AD7345F685C4B26865921E1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8AA8753C1480DA0D54119 /* LoginView.swift */; };
+		8B3FBDA081214E379848BADE /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DB9CB1DADF4D04ADDB6865 /* MainTabView.swift */; };
+		1FCC3C9CE2984E1CB94A8608 /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93164AE2AF64BDD86920B18 /* ProjectsView.swift */; };
+		EC208057EB114EB0B4271B7D /* ProjectDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED80E23EB3B944018B525F55 /* ProjectDetailView.swift */; };
+		95F90B1B44844654BB475AF1 /* FileBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7DC3ED7933436FBB3B08AE /* FileBrowserView.swift */; };
+		7CB10869C1E742F7850AC463 /* FileEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47C1C40675A47D9A7714CC2 /* FileEditorView.swift */; };
+		A5636082D6E548C380709F7E /* TerminalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C094F387B2494EBE98BD7E35 /* TerminalView.swift */; };
+		BB334BB4AB864ED4B1B07383 /* DeployView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD97C45C48C54F35806C4290 /* DeployView.swift */; };
+		BCF0696773E94EA2AFE2C793 /* ProjectSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B546489649B74401AFB57047 /* ProjectSettingsView.swift */; };
+		762B8AD249A84EE4BD214937 /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDF048B37D44C8AD8B880E /* JobsView.swift */; };
+		D3B83718A44F4248A47123F6 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A6F299027247939431C276 /* GalleryView.swift */; };
+		528C990663404F9A97DE3456 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16731A138C412E8BC3CE3F /* AccountView.swift */; };
+		7881B5F5592C45C19E538B1F /* GitHubSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B315AB51204653B5FAAFFA /* GitHubSignIn.swift */; };
+		28D3C16B30274E8B9B458642 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C2797DF0E1F47A280A86BE7 /* Assets.xcassets */; };
+		A94FE5DE522043A298851521 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F96A7C7FAED44CD89EF03D7 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		16F429F2B3C146A99A920222 /* LuisystemdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuisystemdApp.swift; sourceTree = "<group>"; };
-		7BD346F89B9C4CA696D5A50C /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
-		CD6D68BC610A4B63A22F23E5 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
-		4FF24F8512F74D34B88A1813 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
-		380F8DE3994B48EE9F51BEFD /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		2CF2D7D376FF4400AB67645A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		FCD7665F4E5F409E8A585661 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		417E5050DB88493096BB359A /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
-		9F7700C8D8A5402AA5BE5C34 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
-		5C3831D898CF46BEB4E0F9C3 /* FileBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileBrowserView.swift; sourceTree = "<group>"; };
-		178428F71F364E03B8BF13D2 /* FileEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileEditorView.swift; sourceTree = "<group>"; };
-		5439AA0F4A70462FA1E06D29 /* TerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalView.swift; sourceTree = "<group>"; };
-		1A1FC82C17EF42B4A0EF45CD /* DeployView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployView.swift; sourceTree = "<group>"; };
-		EF5C6FEEB62046C8AE8D989F /* ProjectSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettingsView.swift; sourceTree = "<group>"; };
-		32D03DC59CC94139A5BC65CB /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
-		BAC50832222648B29A79F0C1 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
-		01DEC7E875474408A84069DB /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
-		82F8CB83A0C74A89B51C1BD7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E66FC6CCE60D4310AADE16CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		09DC3BF459624A0299C78A18 /* Luisystemd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luisystemd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38585A9B0A64B2A89E5B4C9 /* LuisystemdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuisystemdApp.swift; sourceTree = "<group>"; };
+		EA3C260D70594D82BFB57AB7 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		26F003102B304C63A83709A7 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		991567F58CC749BFB10AA09A /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
+		BD34ED4CD9884A73847FF6C9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		9AD8AA8753C1480DA0D54119 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		63DB9CB1DADF4D04ADDB6865 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A93164AE2AF64BDD86920B18 /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		ED80E23EB3B944018B525F55 /* ProjectDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailView.swift; sourceTree = "<group>"; };
+		0D7DC3ED7933436FBB3B08AE /* FileBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileBrowserView.swift; sourceTree = "<group>"; };
+		F47C1C40675A47D9A7714CC2 /* FileEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileEditorView.swift; sourceTree = "<group>"; };
+		C094F387B2494EBE98BD7E35 /* TerminalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerminalView.swift; sourceTree = "<group>"; };
+		BD97C45C48C54F35806C4290 /* DeployView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeployView.swift; sourceTree = "<group>"; };
+		B546489649B74401AFB57047 /* ProjectSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettingsView.swift; sourceTree = "<group>"; };
+		A5DDF048B37D44C8AD8B880E /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
+		47A6F299027247939431C276 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		8B16731A138C412E8BC3CE3F /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		03B315AB51204653B5FAAFFA /* GitHubSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSignIn.swift; sourceTree = "<group>"; };
+		9C2797DF0E1F47A280A86BE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0F96A7C7FAED44CD89EF03D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3688E197854C4742BE8A4971 /* Luisystemd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Luisystemd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		17863F4D2C17406ABF301012 /* Frameworks */ = {
+		5419FDA977C14C4494FDBB87 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -62,40 +64,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8778C75A1CAD4951AF9D85C5 = {
+		CBE8856C22904998A313D2DC = {
 			isa = PBXGroup;
 			children = (
-				038004533C3F4E2F93C24D30 /* Luisystemd */,
-				3DAB53CC3B984490B2DC1111 /* Products */,
+				C6187165EA8449C2A3D5DC08 /* Luisystemd */,
+				8E87556B1A2B4DE2945DAB39 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3DAB53CC3B984490B2DC1111 /* Products */ = {
+		8E87556B1A2B4DE2945DAB39 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09DC3BF459624A0299C78A18 /* Luisystemd.app */,
+				3688E197854C4742BE8A4971 /* Luisystemd.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		038004533C3F4E2F93C24D30 /* Luisystemd */ = {
+		C6187165EA8449C2A3D5DC08 /* Luisystemd */ = {
 			isa = PBXGroup;
-			children = (16F429F2B3C146A99A920222 /* LuisystemdApp.swift */, 7BD346F89B9C4CA696D5A50C /* Models.swift */, CD6D68BC610A4B63A22F23E5 /* APIClient.swift */, 4FF24F8512F74D34B88A1813 /* SessionStore.swift */, 380F8DE3994B48EE9F51BEFD /* RootView.swift */, 2CF2D7D376FF4400AB67645A /* LoginView.swift */, FCD7665F4E5F409E8A585661 /* MainTabView.swift */, 417E5050DB88493096BB359A /* ProjectsView.swift */, 9F7700C8D8A5402AA5BE5C34 /* ProjectDetailView.swift */, 5C3831D898CF46BEB4E0F9C3 /* FileBrowserView.swift */, 178428F71F364E03B8BF13D2 /* FileEditorView.swift */, 5439AA0F4A70462FA1E06D29 /* TerminalView.swift */, 1A1FC82C17EF42B4A0EF45CD /* DeployView.swift */, EF5C6FEEB62046C8AE8D989F /* ProjectSettingsView.swift */, 32D03DC59CC94139A5BC65CB /* JobsView.swift */, BAC50832222648B29A79F0C1 /* GalleryView.swift */, 01DEC7E875474408A84069DB /* AccountView.swift */, BD24FD95179D4D94A479EB85 /* Assets.xcassets */, F03191E2BF954FAEA48B2D2E /* Preview Content */);
+			children = (A38585A9B0A64B2A89E5B4C9 /* LuisystemdApp.swift */, EA3C260D70594D82BFB57AB7 /* Models.swift */, 26F003102B304C63A83709A7 /* APIClient.swift */, 991567F58CC749BFB10AA09A /* SessionStore.swift */, BD34ED4CD9884A73847FF6C9 /* RootView.swift */, 9AD8AA8753C1480DA0D54119 /* LoginView.swift */, 63DB9CB1DADF4D04ADDB6865 /* MainTabView.swift */, A93164AE2AF64BDD86920B18 /* ProjectsView.swift */, ED80E23EB3B944018B525F55 /* ProjectDetailView.swift */, 0D7DC3ED7933436FBB3B08AE /* FileBrowserView.swift */, F47C1C40675A47D9A7714CC2 /* FileEditorView.swift */, C094F387B2494EBE98BD7E35 /* TerminalView.swift */, BD97C45C48C54F35806C4290 /* DeployView.swift */, B546489649B74401AFB57047 /* ProjectSettingsView.swift */, A5DDF048B37D44C8AD8B880E /* JobsView.swift */, 47A6F299027247939431C276 /* GalleryView.swift */, 8B16731A138C412E8BC3CE3F /* AccountView.swift */, 03B315AB51204653B5FAAFFA /* GitHubSignIn.swift */, B43835057E8D4D1FA7F87CCB /* Assets.xcassets */, 4C6E45BC5401408B83A63169 /* Preview Content */);
 			path = Luisystemd;
 			sourceTree = "<group>";
 		};
-		BD24FD95179D4D94A479EB85 /* Assets.xcassets */ = {
+		B43835057E8D4D1FA7F87CCB /* Assets.xcassets */ = {
 			isa = PBXGroup;
 			children = (
-				82F8CB83A0C74A89B51C1BD7 /* Assets.xcassets */,
+				9C2797DF0E1F47A280A86BE7 /* Assets.xcassets */,
 			);
 			name = Assets.xcassets;
 			sourceTree = "<group>";
 		};
-		F03191E2BF954FAEA48B2D2E /* Preview Content */ = {
+		4C6E45BC5401408B83A63169 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				E66FC6CCE60D4310AADE16CB /* Preview Assets.xcassets */,
+				0F96A7C7FAED44CD89EF03D7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -103,13 +105,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9D713DEFBB9D4AEF831DC482 /* Luisystemd */ = {
+		85D93C1362B04EF5954C8854 /* Luisystemd */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B5A96CDD392A488F901A7425 /* Build configuration list for PBXNativeTarget "Luisystemd" */;
+			buildConfigurationList = ED8654D7E43E4DE2AC2B5604 /* Build configuration list for PBXNativeTarget "Luisystemd" */;
 			buildPhases = (
-				066B06642383403AA9A5753E /* Sources */,
-				17863F4D2C17406ABF301012 /* Frameworks */,
-				FC556A952DE0453FA5397CB1 /* Resources */,
+				85CEB99EBD1E414297EF9D1A /* Sources */,
+				5419FDA977C14C4494FDBB87 /* Frameworks */,
+				8D07A26EB7AD4507957E4219 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -117,25 +119,25 @@
 			);
 			name = Luisystemd;
 			productName = Luisystemd;
-			productReference = 09DC3BF459624A0299C78A18 /* Luisystemd.app */;
+			productReference = 3688E197854C4742BE8A4971 /* Luisystemd.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5CEC907D525F46BFAD597137 /* Project object */ = {
+		6BF4D1ABA2804F0F8445C489 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					9D713DEFBB9D4AEF831DC482 = {
+					85D93C1362B04EF5954C8854 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
 			};
-			buildConfigurationList = 6050459B57C44528BD608039 /* Build configuration list for PBXProject "Luisystemd" */;
+			buildConfigurationList = FF463283FBB540DE974C5D8C /* Build configuration list for PBXProject "Luisystemd" */;
 			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -143,57 +145,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 8778C75A1CAD4951AF9D85C5;
-			productRefGroup = 3DAB53CC3B984490B2DC1111 /* Products */;
+			mainGroup = CBE8856C22904998A313D2DC;
+			productRefGroup = 8E87556B1A2B4DE2945DAB39 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9D713DEFBB9D4AEF831DC482 /* Luisystemd */,
+				85D93C1362B04EF5954C8854 /* Luisystemd */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FC556A952DE0453FA5397CB1 /* Resources */ = {
+		8D07A26EB7AD4507957E4219 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01AEA45F77BA485FBF4068B3 /* Preview Assets.xcassets in Resources */,
-				73C01BDC51C54DD089C6114B /* Assets.xcassets in Resources */,
+				A94FE5DE522043A298851521 /* Preview Assets.xcassets in Resources */,
+				28D3C16B30274E8B9B458642 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		066B06642383403AA9A5753E /* Sources */ = {
+		85CEB99EBD1E414297EF9D1A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CD2FD7E254B40BCA895A4EC /* LuisystemdApp.swift in Sources */,
-				9A719DE9CB43412293094513 /* Models.swift in Sources */,
-				C568C7BC98754EEFAB657F54 /* APIClient.swift in Sources */,
-				E7A1AF06F154489BA8E398FF /* SessionStore.swift in Sources */,
-				DF8F2C83EA8A4A7EB3CC063D /* RootView.swift in Sources */,
-				A531831399DA4651BB9BD701 /* LoginView.swift in Sources */,
-				004C1059D9E64B7DA1BCCB89 /* MainTabView.swift in Sources */,
-				E1DE43599DA541F296DA4253 /* ProjectsView.swift in Sources */,
-				00BD593FBB5E40F0AD746D6F /* ProjectDetailView.swift in Sources */,
-				E4199551379A49E892EF0E23 /* FileBrowserView.swift in Sources */,
-				72C658B154624154BA7A7BED /* FileEditorView.swift in Sources */,
-				689FCE19CEEB4B26B5ECDCC6 /* TerminalView.swift in Sources */,
-				E78187C91E4C432C87D04188 /* DeployView.swift in Sources */,
-				E4E2AACA39A8444F8388B647 /* ProjectSettingsView.swift in Sources */,
-				94D1D81F534746E9BFCD494F /* JobsView.swift in Sources */,
-				C37CD6BCA40349BE99F9ABC9 /* GalleryView.swift in Sources */,
-				7CF6D0325E764A4D82F5C946 /* AccountView.swift in Sources */,
+				9824BFD5A7C8464793D30083 /* LuisystemdApp.swift in Sources */,
+				8F29FCF4C92A40988A07B903 /* Models.swift in Sources */,
+				B712DCAE636A45AD9A133192 /* APIClient.swift in Sources */,
+				D3F51E0A07814C3EB5384FA9 /* SessionStore.swift in Sources */,
+				4D9CA4AAD81549A48AFC5A5F /* RootView.swift in Sources */,
+				7AD7345F685C4B26865921E1 /* LoginView.swift in Sources */,
+				8B3FBDA081214E379848BADE /* MainTabView.swift in Sources */,
+				1FCC3C9CE2984E1CB94A8608 /* ProjectsView.swift in Sources */,
+				EC208057EB114EB0B4271B7D /* ProjectDetailView.swift in Sources */,
+				95F90B1B44844654BB475AF1 /* FileBrowserView.swift in Sources */,
+				7CB10869C1E742F7850AC463 /* FileEditorView.swift in Sources */,
+				A5636082D6E548C380709F7E /* TerminalView.swift in Sources */,
+				BB334BB4AB864ED4B1B07383 /* DeployView.swift in Sources */,
+				BCF0696773E94EA2AFE2C793 /* ProjectSettingsView.swift in Sources */,
+				762B8AD249A84EE4BD214937 /* JobsView.swift in Sources */,
+				D3B83718A44F4248A47123F6 /* GalleryView.swift in Sources */,
+				528C990663404F9A97DE3456 /* AccountView.swift in Sources */,
+				7881B5F5592C45C19E538B1F /* GitHubSignIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		A66709898E864AB7A07C0183 /* Debug */ = {
+		CA0D25DEEC454FC99B4190C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,7 +257,7 @@
 			};
 			name = Debug;
 		};
-		66651AEC10314CF2B11D0C8D /* Release */ = {
+		6F67A2FD716D49A2A5FA6745 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -308,7 +311,7 @@
 			};
 			name = Release;
 		};
-		7C3B26F951734D44AEAA653E /* Debug */ = {
+		32D866CDFE0F430DB8634713 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -317,14 +320,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Luisystemd/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_CFBundleDisplayName = Luisystemd;
+				INFOPLIST_FILE = Luisystemd/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -339,7 +335,7 @@
 			};
 			name = Debug;
 		};
-		A76C1C8B3CAB4BB69D7A5D01 /* Release */ = {
+		E3F63D2D01944E678E3FFEC7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -348,14 +344,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Luisystemd/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_CFBundleDisplayName = Luisystemd;
+				INFOPLIST_FILE = Luisystemd/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -373,25 +362,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6050459B57C44528BD608039 /* Build configuration list for PBXProject "Luisystemd" */ = {
+		FF463283FBB540DE974C5D8C /* Build configuration list for PBXProject "Luisystemd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A66709898E864AB7A07C0183 /* Debug */,
-				66651AEC10314CF2B11D0C8D /* Release */,
+				CA0D25DEEC454FC99B4190C5 /* Debug */,
+				6F67A2FD716D49A2A5FA6745 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B5A96CDD392A488F901A7425 /* Build configuration list for PBXNativeTarget "Luisystemd" */ = {
+		ED8654D7E43E4DE2AC2B5604 /* Build configuration list for PBXNativeTarget "Luisystemd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7C3B26F951734D44AEAA653E /* Debug */,
-				A76C1C8B3CAB4BB69D7A5D01 /* Release */,
+				32D866CDFE0F430DB8634713 /* Debug */,
+				E3F63D2D01944E678E3FFEC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5CEC907D525F46BFAD597137 /* Project object */;
+	rootObject = 6BF4D1ABA2804F0F8445C489 /* Project object */;
 }
