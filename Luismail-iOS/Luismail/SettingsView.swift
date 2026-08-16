@@ -78,6 +78,16 @@ struct SettingsView: View {
                 } footer: {
                     Text("Permanently deletes your address and all mail. Cannot be undone.")
                 }
+
+                Section {
+                    NavigationLink {
+                        InfoView()
+                    } label: {
+                        Label("About Luismail", systemImage: "info.circle")
+                    }
+                } footer: {
+                    Text("How it works, encryption, recovery.")
+                }
             }
             .navigationTitle("Settings")
             .confirmationDialog(
