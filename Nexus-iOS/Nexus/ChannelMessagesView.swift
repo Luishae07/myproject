@@ -81,37 +81,28 @@ struct ChannelMessagesView: View {
                 Task { await createPoll(question: question, options: options) }
             }
         }
-        .onChange(of: socket.lastEvent?.message_id) { _, _ in
-            handleReactionEvent()
-        }
-        .onChange(of: socket.lastEvent?.poll_id) { _, _ in
-            handlePollEvent()
-        }
-        .onChange(of: socket.lastEvent?.channel_id) { _, _ in
-            handleMessageEvent()
+        .onChange(of: socket.lastEvent?.id) { _, _ in
+            handleIncomingEvent()
         }
     }
 
-    private func handleMessageEvent() {
-        guard let event = socket.lastEvent, event.type == "message",
-              event.channel_id == channel.id, let message = event.message else { return }
-        if !messages.contains(where: { $0.id == message.id }) {
-            messages.append(message)
+    private func handleIncomingEvent() {
+        guard let event = socket.lastEvent?.event, event.channel_id == channel.id else { return }
+        switch event.type {
+        case "message":
+            guard let message = event.message else { return }
+            if !messages.contains(where: { $0.id == message.id }) {
+                messages.append(message)
+            }
+        case "reaction":
+            guard let mid = event.message_id, let idx = messages.firstIndex(where: { $0.id == mid }) else { return }
+            messages[idx].reactions = event.reactions
+        case "poll_update":
+            guard let pid = event.poll_id, let idx = messages.firstIndex(where: { $0.poll?.id == pid }) else { return }
+            messages[idx].poll = event.poll
+        default:
+            break
         }
-    }
-
-    private func handleReactionEvent() {
-        guard let event = socket.lastEvent, event.type == "reaction",
-              event.channel_id == channel.id, let mid = event.message_id else { return }
-        guard let idx = messages.firstIndex(where: { $0.id == mid }) else { return }
-        messages[idx].reactions = event.reactions
-    }
-
-    private func handlePollEvent() {
-        guard let event = socket.lastEvent, event.type == "poll_update",
-              event.channel_id == channel.id, let pid = event.poll_id else { return }
-        guard let idx = messages.firstIndex(where: { $0.poll?.id == pid }) else { return }
-        messages[idx].poll = event.poll
     }
 
     private func load() async {

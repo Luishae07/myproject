@@ -1,5 +1,17 @@
 import Foundation
 
+/// Wraps every received WSEvent with a fresh identity -- views watch
+/// `.onChange(of: socket.lastEvent?.id)` rather than a derived field like
+/// channel_id, because two events in a row with the SAME channel_id/
+/// message_id/poll_id (e.g. two messages posted back-to-back in one
+/// channel) wouldn't otherwise re-trigger SwiftUI's onChange at all, since
+/// it only fires on an actual value change -- that was silently dropping
+/// every second-and-later live update until the view was reopened.
+struct IdentifiedWSEvent: Identifiable {
+    let id = UUID()
+    let event: WSEvent
+}
+
 /// Thin wrapper over URLSessionWebSocketTask against /api/nexus/ws -- the
 /// real-time transport this backend deliberately moved to from SSE/long-poll
 /// specifically because cloudflared quick tunnels buffer whole SSE bodies
@@ -7,7 +19,7 @@ import Foundation
 /// Luismail's realtime and Nexus's own JS frontend).
 @MainActor
 final class NexusSocket: ObservableObject {
-    @Published var lastEvent: WSEvent?
+    @Published var lastEvent: IdentifiedWSEvent?
     @Published var onlineUsers: Set<String> = []
 
     private var task: URLSessionWebSocketTask?
@@ -60,7 +72,7 @@ final class NexusSocket: ObservableObject {
         if event.type == "presence", let online = event.online {
             onlineUsers = Set(online)
         }
-        lastEvent = event
+        lastEvent = IdentifiedWSEvent(event: event)
     }
 
     private func scheduleReconnect() {
