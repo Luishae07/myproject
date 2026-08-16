@@ -84,7 +84,7 @@ struct LuismailShortcuts: AppShortcutsProvider {
     static var appShortcuts: [AppShortcut] {
         AppShortcut(
             intent: GetUnreadCountIntent(),
-            phrases: ["How many unread Luismail messages do I have", "Check my \(.applicationName) unread count"],
+            phrases: ["How many unread messages in \(.applicationName)", "Check my \(.applicationName) unread count"],
             shortTitle: "Unread Count",
             systemImageName: "envelope.badge"
         )
