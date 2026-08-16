@@ -20,6 +20,10 @@ struct LuismailEntry: TimelineEntry {
     let loggedIn: Bool
 }
 
+private struct CompletionBox<T>: @unchecked Sendable {
+    let completion: (T) -> Void
+}
+
 struct LuismailProvider: TimelineProvider {
     func placeholder(in context: Context) -> LuismailEntry {
         LuismailEntry(date: .now, unreadCount: 3, latestFrom: "someone/luismail.pages.dev", latestSubject: "Welcome to Luismail", loggedIn: true)
@@ -30,13 +34,19 @@ struct LuismailProvider: TimelineProvider {
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<LuismailEntry>) -> Void) {
+        // TimelineProvider's completion handler predates Swift 6 strict
+        // concurrency and isn't marked @Sendable, so capturing it directly
+        // inside a Task{} closure is flagged as a data-race risk even
+        // though WidgetKit itself calls it safely from any queue -- the
+        // box just asserts what's already true.
+        let box = CompletionBox(completion: completion)
         Task {
             let entry = await fetchEntry()
             // Widgets can't hold a persistent connection -- refetch on a
             // short interval so the unread count/preview stay reasonably
             // fresh without the real-time WebSocket the main app uses.
             let next = Calendar.current.date(byAdding: .minute, value: 15, to: .now) ?? .now.addingTimeInterval(900)
-            completion(Timeline(entries: [entry], policy: .after(next)))
+            box.completion(Timeline(entries: [entry], policy: .after(next)))
         }
     }
 
